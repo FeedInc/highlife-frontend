@@ -1,0 +1,21 @@
+$yellow-duck: #FFA737;
+$dark-blue: #081424;
+
+.logo span {
+  font-family: "high-life", sans-serif;
+    font-size: 40px;
+}
+
+.logo span:nth-child(2),
+.logo span:nth-child(1) {
+  color: $yellow-duck;
+}
+//}
+.logo span:nth-child(3),
+.logo span:nth-child(5) {
+  color: $dark-blue;
+}
+
+.logo img {
+    width: 8px;
+}

@@ -1,0 +1,84 @@
+  <mat-toolbar style="background: #e5e3e3">
+    <mat-toolbar-row>
+      <button mat-button (click)="sidenav.toggle()" ><mat-icon>menu</mat-icon></button>
+      <button  mat-button [routerLink]="'/'"><app-logo-highlife></app-logo-highlife></button>
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <button mat-button [routerLink]="'/'">Games</button>
+        <button mat-button [routerLink]="'/'">Play</button>
+        <button mat-button [routerLink]="'/'">More</button>
+        <button mat-button [routerLink]="'/sign-in'">Sign in</button>
+        <button mat-button [routerLink]="'/sign-up'">Sign up</button>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav class="sidenav-content" opened="false" mode="push">
+      <mat-nav-list>
+        <span class="side-title"><mat-icon class="icon">group_work</mat-icon>Teams</span>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"> Create a Team</a>
+        </mat-list-item>
+      </mat-nav-list>
+
+      <mat-nav-list>
+        <span class="side-title"><mat-icon class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2972/2972351.png" alt="games"></mat-icon>My games</span>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-dota2.png" alt="dota2" ></mat-icon>Dota 2</a>
+        </mat-list-item>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-csgo.png" alt="csgo" ></mat-icon>CS:GO</a>
+        </mat-list-item>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-valorant.png" alt="valorant" ></mat-icon>VALORANT</a>
+        </mat-list-item>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-rocket-league.png" alt="rocket-league" ></mat-icon>Rocket League</a>
+        </mat-list-item>
+      </mat-nav-list>
+
+      <mat-nav-list>
+        <span class="side-title"> <mat-icon class="icon"><img src="https://cdn-icons-png.flaticon.com/512/109/109812.png" alt="trophy" width="25" height="25"></mat-icon>Tournaments</span>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-dota2.png" alt="dota2" width="32" height="32"></mat-icon>Dota 2</a>
+        </mat-list-item>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-csgo.png" alt="csgo" width="32" height="32"></mat-icon>CS:GO</a>
+        </mat-list-item>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-valorant.png" alt="valorant" width="32" height="32"></mat-icon>VALORANT</a>
+        </mat-list-item>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-rocket-league.png" alt="rocket-league" width="32" height="32"></mat-icon>Rocket League</a>
+        </mat-list-item>
+      </mat-nav-list>
+
+      <mat-nav-list>
+        <span class="side-title"><mat-icon class="icon"><img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/344/external-league-pro-gamer-inipagistudio-mixed-inipagistudio.png" alt="league" width="25" height="25"></mat-icon>Leagues</span>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-dota2.png" alt="dota2" width="32" height="32"></mat-icon>Dota 2</a>
+        </mat-list-item>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-csgo.png" alt="csgo" width="32" height="32"></mat-icon>CS:GO</a>
+        </mat-list-item>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-valorant.png" alt="valorant" width="32" height="32"></mat-icon>VALORANT</a>
+        </mat-list-item>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-rocket-league.png" alt="rocket-league" width="32" height="32"></mat-icon>Rocket League</a>
+        </mat-list-item>
+      </mat-nav-list>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="sidenav">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

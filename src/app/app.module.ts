@@ -11,19 +11,38 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './views/home/home.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import { LoginComponent } from './views/login/login.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatIconModule} from "@angular/material/icon";
+
+import {MatButtonModule} from "@angular/material/button";
+import {FormsModule} from "@angular/forms";
+import { NavbarComponent } from './components/nav-bar/navbar.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatListModule } from '@angular/material/list';
+import {FlexLayoutModule} from "@angular/flex-layout";
+import {LogoHighlifeComponent} from "./components/logo-highlife/logo-highlife.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NavbarComponent,
+    LogoHighlifeComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    LayoutModule,
+    MatListModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
