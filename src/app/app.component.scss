@@ -1,0 +1,19 @@
+$dark-blue: #212833;
+@font-face {
+  font-family: "high-life";
+  src: url("../fonts/HighLife.ttf");
+}
+
+#app {
+  height: 100%;
+  background-color: $dark-blue;
+  color: white;
+}
+//
+//.views-container {
+//  width: 100%;
+//  padding-top: 50px;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//}
