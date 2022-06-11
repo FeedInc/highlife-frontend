@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+$yellow-duck: #FFA737;
+
+.bgWhite {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+.font-b {
+  font-family: "Bebas Neue",sans-serif;
+  font-size: 3.5rem;
+  color: $yellow-duck;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+
+}
+.logo span {
+  font-family: "high-life", sans-serif;
+  font-size: 10rem;
+}
+.logo span:nth-child(2),
+.logo span:nth-child(1) {
+  color: $yellow-duck;
+}
+.logo span:nth-child(3),
+.logo span:nth-child(5) {
+  color: white;
+}
+.logo img {
+  width: 2rem;
+  vertical-align:baseline;
+
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

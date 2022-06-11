@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="center">
+  <div class="logo">
+    <span>HI</span>
+    <span>GH</span>
+    <span>L</span>
+    <img src="./assets/bullet-logo.svg" alt="bullet img">
+    <span>FE</span>
+  </div>
+</div>
+<div class="center font-b" >COMPLETE SIGN UP</div>
+
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+      <b>LOGIN</b>
+    </div>
+    <div class="card-body p-4">
+      <label style="float: left">Email</label>
+      <input class="form-control m-2" type="email" placeholder="Type your email or username" [(ngModel)]="user.email">
+      <label style="float: left">Password</label>
+      <input class="form-control m-2" type="password" placeholder="Type your password" [(ngModel)]="user.password">
+      <button class="btn btn-primary w-100 m-2" (click)="loginWithEmail()" >Login</button>
+      <button class="btn btn-danger w-100 m-2" (click)="loginWithGoogle()" >Login with Google</button>
+
+      <label>Aún no tienes cuenta? <a routerLink="/register">Sign up</a></label>
+
+    </div>
+
+  </div>
+</div>

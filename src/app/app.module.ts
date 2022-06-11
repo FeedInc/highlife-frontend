@@ -21,6 +21,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatListModule } from '@angular/material/list';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {LogoHighlifeComponent} from "./components/logo-highlife/logo-highlife.component";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import {LogoHighlifeComponent} from "./components/logo-highlife/logo-highlife.co
     LayoutModule,
     MatListModule,
     FlexLayoutModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
