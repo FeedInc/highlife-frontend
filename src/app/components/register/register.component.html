@@ -1,0 +1,40 @@
+<div class="center">
+  <div class="logo">
+    <span>HI</span>
+    <span>GH</span>
+    <span>L</span>
+    <img src="../../../assets/bullet-logo.svg" alt="bullet img">
+    <span>FE</span>
+  </div>
+</div>
+<div class="center font-b" >COMPLETE SIGN UP</div>
+
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+      <b>SIGN UP</b>
+    </div>
+    <div class="card-body p-4">
+      <div style="display: flex; justify-content: space-between">
+        <label style="float: left">Full Name</label>
+      </div>
+      <div style="display: flex">
+        <input class="form-control m-2" type="email" placeholder="Type your first name" [(ngModel)]="user.email">
+        <input class="form-control m-2" type="email" placeholder="Type your last name" [(ngModel)]="user.email">
+      </div>
+      <label style="float: left">Username</label>
+      <input class="form-control m-2" type="email" placeholder="Type your username" [(ngModel)]="user.email">
+      <label style="float: left">Email</label>
+      <input class="form-control m-2" type="email" placeholder="Type your email" [(ngModel)]="user.email">
+
+      <label style="float: left">Password</label>
+      <input class="form-control m-2" type="password" placeholder="Type your password" [(ngModel)]="user.password">
+
+      <button class="btn btn-primary w-100 m-2" (click)="signUp()" >Sign up</button>
+
+      <label>Already have an account? <a routerLink="/login">Login</a></label>
+
+    </div>
+
+  </div>
+</div>

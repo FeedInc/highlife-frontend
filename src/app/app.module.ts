@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './views/home/home.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
-import { LoginComponent } from './views/login/login.component';
+import { LoginComponent } from './components/login/login.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 
@@ -22,12 +22,14 @@ import { MatListModule } from '@angular/material/list';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {LogoHighlifeComponent} from "./components/logo-highlife/logo-highlife.component";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {RegisterComponent} from "./components/register/register.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
+    RegisterComponent,
     NavbarComponent,
     LogoHighlifeComponent
   ],
