@@ -6,11 +6,11 @@ import firebase from "firebase/compat/app";
 })
 export class AuthService {
 
-  constructor(private afauth:AngularFireAuth) {}
+  constructor(private aFAuth:AngularFireAuth) {}
 
-  async register(email:string, password:string){
+  async register(email: string, password: string){
     try{
-      return await this.afauth.createUserWithEmailAndPassword(email,password);
+      return await this.aFAuth.createUserWithEmailAndPassword(email,password);
     }catch(err){
       console.log("error en login: ",err);
       return null;
@@ -19,7 +19,7 @@ export class AuthService {
 
   async login(email:string, password:string){
     try{
-      return await this.afauth.signInWithEmailAndPassword(email,password);
+      return await this.aFAuth.signInWithEmailAndPassword(email,password);
     }catch(err){
       console.log("error en login: ",err);
       return null;
@@ -27,17 +27,17 @@ export class AuthService {
   }
   async loginWithGoogle(){
     try{
-      return await this.afauth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+      return await this.aFAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
     }catch(err){
       console.log("error en login con Google: ",err);
       return null;
     }
   }
   getUserLogged(){
-    return this.afauth.authState;
+    return this.aFAuth.authState;
   }
   logOut(){
-    this.afauth.signOut();
+    this.aFAuth.signOut().then();
   }
 
  }

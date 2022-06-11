@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthService} from "../../services/auth.service";
+import {AuthService} from "../../services/firebase-auth/auth.service";
 import {Router} from "@angular/router";
 
 @Component({
@@ -12,6 +12,8 @@ export class LoginComponent implements OnInit {
     email:'',
     password:''
   }
+
+
 
   constructor(private authService: AuthService, private router: Router) {
 

@@ -23,6 +23,9 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import {LogoHighlifeComponent} from "./components/logo-highlife/logo-highlife.component";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {RegisterComponent} from "./components/register/register.component";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatInputModule} from "@angular/material/input";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -47,6 +50,9 @@ import {RegisterComponent} from "./components/register/register.component";
     MatListModule,
     FlexLayoutModule,
     NgbModule,
+    MatFormFieldModule,
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,26 +14,28 @@
     <div class="card-header">
       <b>SIGN UP</b>
     </div>
+
     <div class="card-body p-4">
+      <form (submit)="onSubmit()" #userForm="ngForm">
+
       <div style="display: flex; justify-content: space-between">
         <label style="float: left">Full Name</label>
       </div>
       <div style="display: flex">
-        <input class="form-control m-2" type="email" placeholder="Type your first name" [(ngModel)]="user.email">
-        <input class="form-control m-2" type="email" placeholder="Type your last name" [(ngModel)]="user.email">
+        <input class="form-control m-2" name="firstName" type="text" placeholder="Type your first name" required [(ngModel)]="userData.firstName">
+        <input class="form-control m-2" name="lastName" type="text" placeholder="Type your last name" required [(ngModel)]="userData.lastName">
       </div>
       <label style="float: left">Username</label>
-      <input class="form-control m-2" type="email" placeholder="Type your username" [(ngModel)]="user.email">
+      <input class="form-control m-2" name="nickName" type="text"  placeholder="Type your username" required [(ngModel)]="userData.nickName">
       <label style="float: left">Email</label>
-      <input class="form-control m-2" type="email" placeholder="Type your email" [(ngModel)]="user.email">
+      <input class="form-control m-2" name="email" type="email" placeholder="Type your email" required [(ngModel)]="user.email">
 
       <label style="float: left">Password</label>
-      <input class="form-control m-2" type="password" placeholder="Type your password" [(ngModel)]="user.password">
+      <input class="form-control m-2" name="password" type="password" placeholder="Type your password"  required [(ngModel)]="user.password">
 
-      <button class="btn btn-primary w-100 m-2" (click)="signUp()" >Sign up</button>
-
+      <button class="btn btn-primary w-100 m-2" >Sign up</button>
+      </form>
       <label>Already have an account? <a routerLink="/login">Login</a></label>
-
     </div>
 
   </div>

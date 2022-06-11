@@ -1,161 +1,12 @@
 {
+  "users": [
+
+  ],
   "comments": [
     {
       "id": 1,
       "body": "some comment",
       "postId": 1
-    }
-  ],
-  "users": [
-    {
-      "id": "23GH",
-      "type": "padawan",
-      "gender": "female",
-      "name": {
-        "title": "Ms",
-        "first": "کیانا",
-        "last": "نكو نظر"
-      },
-      "medals":[
-        {
-          "game": "dota2",
-          "medal": "guardian-4"
-        },
-        {
-          "game": "lol",
-          "medal": "bronce-3"
-        }
-      ],
-      "games": ["lol", "dota2"],
-      "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien",
-      "location": {
-        "street": {
-          "number": 7993,
-          "name": "میدان دکتر فاطمی / جهاد"
-        },
-        "city": "بروجرد",
-        "state": "کهگیلویه و بویراحمد",
-        "country": "Iran",
-        "postcode": 12366,
-        "coordinates": {
-          "latitude": "28.9607",
-          "longitude": "126.7840"
-        },
-        "timezone": {
-          "offset": "+10:00",
-          "description": "Eastern Australia, Guam, Vladivostok"
-        }
-      },
-      "email": "khyn.nkwnzr@example.com",
-      "login": {
-        "uuid": "ebefcb3e-098d-4ef6-bd7a-60b29f97f9a5",
-        "username": "redgorilla126",
-        "password": "jolly",
-        "salt": "KI148zD2",
-        "md5": "f7b731d2db5b5b2ade54694e6e90e441",
-        "sha1": "71b3502ea012d5754fe96cce5aaec765fae7015f",
-        "sha256": "b0a9db814e387be2ef355a65102a4d13f38943a25e1c2dd9afb1b5285163fa2a"
-      },
-      "dob": {
-        "date": "1983-10-13T00:38:19.993Z",
-        "age": 39
-      },
-      "registered": {
-        "date": "2005-06-23T08:42:34.835Z",
-        "age": 17
-      },
-      "phone": "095-49563609",
-      "cell": "0975-766-0030",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/women/59.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/59.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/59.jpg"
-      },
-      "nat": "IR",
-      "stats": [
-        { "gameId": "dota2",
-          "data":[20, 30, 40, 10, 20]
-        },
-        {
-          "gameId": "lol",
-          "data":[70, 35, 42, 19, 42, 90, 28, 90]
-        }
-      ]
-    },
-    {
-      "id": "925-82-3872",
-      "type": "coach",
-      "gender": "male",
-      "name": {
-        "title": "Mr",
-        "first": "Judd",
-        "last": "Spencer"
-      },
-      "medals":[
-        {
-          "game": "csgo",
-          "medal": "global-elite"
-        },
-        {
-          "game": "valorant",
-          "medal": "radiant"
-        }
-      ],
-      "games": ["valorant", "csgo"],
-      "biography": "sed, facilisis vitae, orci. Phasellus dapibus quam quis diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce aliquet magna a neque. Nullam ut nisi a odio semper cursus. Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices iaculis odio. Nam interdum enim non nisi. Aenean eget metus. In nec orci. Donec nibh. Quisque nonummy ipsum",
-      "location": {
-        "street": {
-          "number": 8294,
-          "name": "Westheimer Rd"
-        },
-        "city": "Torrance",
-        "state": "Massachusetts",
-        "country": "United States",
-        "postcode": 22620,
-        "coordinates": {
-          "latitude": "83.1939",
-          "longitude": "-162.8816"
-        },
-        "timezone": {
-          "offset": "+4:00",
-          "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
-        }
-      },
-      "email": "judd.spencer@example.com",
-      "login": {
-        "uuid": "8d9dfe62-b7ef-42a5-80ad-a71f70c54e23",
-        "username": "redsnake690",
-        "password": "77777777",
-        "salt": "RC48jPvI",
-        "md5": "849c77b3d8e5bc73cb0416250ee4855b",
-        "sha1": "f4d75f9a33d0827b1b93fcef575066c89d057917",
-        "sha256": "abb08e59f738a580af199724f1a98716d0db02033d2d46cdb3e93a7ae0316a6d"
-      },
-      "dob": {
-        "date": "1968-07-21T06:47:36.477Z",
-        "age": 54
-      },
-      "registered": {
-        "date": "2003-10-30T04:33:28.046Z",
-        "age": 19
-      },
-      "phone": "(407)-329-1281",
-      "cell": "(615)-508-4878",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/men/96.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/men/96.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/96.jpg"
-      },
-      "nat": "US",
-      "stats": [
-        { "gameId": "csgo",
-          "data":[20, 30, 40, 10, 20]
-        },
-        {
-          "gameId": "valorant",
-          "data":[70, 35, 42, 19, 42, 90, 28, 90]
-        }
-      ]
     }
   ],
   "games": [
@@ -164,7 +15,13 @@
       "name": "Dota 2",
       "type": "moba",
       "logo": "https://1000marcas.net/wp-content/uploads/2020/02/Dota-2-Logo.png",
-      "statsLabels":["Fighting", "Farming", "Suporting", "Pushing", "Versatility"],
+      "statsLabels": [
+        "Fighting",
+        "Farming",
+        "Suporting",
+        "Pushing",
+        "Versatility"
+      ],
       "medals": [
         {
           "name": "herald-1",
@@ -175,16 +32,16 @@
           "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ee/SeasonalRank1-2.png"
         },
         {
-          "name":"herald-3",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/0/05/SeasonalRank1-3.png"
+          "name": "herald-3",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/05/SeasonalRank1-3.png"
         },
         {
-          "name":"herald-4",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6d/SeasonalRank1-4.png"
+          "name": "herald-4",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6d/SeasonalRank1-4.png"
         },
         {
-          "name":"herald-5",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2b/SeasonalRank1-5.png"
+          "name": "herald-5",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2b/SeasonalRank1-5.png"
         },
         {
           "name": "guardian-1",
@@ -195,16 +52,16 @@
           "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2c/SeasonalRank2-2.png"
         },
         {
-          "name":"guardian-3",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f5/SeasonalRank2-3.png"
+          "name": "guardian-3",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/f5/SeasonalRank2-3.png"
         },
         {
-          "name":"guardian-4",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b4/SeasonalRank2-4.png"
+          "name": "guardian-4",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b4/SeasonalRank2-4.png"
         },
         {
-          "name":"guardian-5",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/3/32/SeasonalRank2-5.png"
+          "name": "guardian-5",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/32/SeasonalRank2-5.png"
         },
         {
           "name": "crusader-1",
@@ -215,16 +72,16 @@
           "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6e/SeasonalRank3-2.png"
         },
         {
-          "name":"crusader-3",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/6/67/SeasonalRank3-3.png"
+          "name": "crusader-3",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/67/SeasonalRank3-3.png"
         },
         {
-          "name":"crusader-4",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/87/SeasonalRank3-4.png"
+          "name": "crusader-4",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/87/SeasonalRank3-4.png"
         },
         {
-          "name":"crusader-5",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b1/SeasonalRank3-5.png"
+          "name": "crusader-5",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b1/SeasonalRank3-5.png"
         },
         {
           "name": "archon-1",
@@ -235,16 +92,16 @@
           "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/87/SeasonalRank4-2.png"
         },
         {
-          "name":"archon-3",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/6/60/SeasonalRank4-3.png"
+          "name": "archon-3",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/60/SeasonalRank4-3.png"
         },
         {
-          "name":"archon-4",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4a/SeasonalRank4-4.png"
+          "name": "archon-4",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4a/SeasonalRank4-4.png"
         },
         {
-          "name":"archon-5",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/SeasonalRank4-5.png"
+          "name": "archon-5",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/SeasonalRank4-5.png"
         },
         {
           "name": "legend-1",
@@ -255,16 +112,16 @@
           "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/52/SeasonalRank5-2.png"
         },
         {
-          "name":"legend-3",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/88/SeasonalRank5-3.png"
+          "name": "legend-3",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/88/SeasonalRank5-3.png"
         },
         {
-          "name":"legend-4",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/2/25/SeasonalRank5-4.png"
+          "name": "legend-4",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/25/SeasonalRank5-4.png"
         },
         {
-          "name":"legend-5",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8e/SeasonalRank5-5.png"
+          "name": "legend-5",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8e/SeasonalRank5-5.png"
         },
         {
           "name": "ancient-1",
@@ -275,16 +132,16 @@
           "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1c/SeasonalRank6-2.png"
         },
         {
-          "name":"ancient-3",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/da/SeasonalRank6-3.png"
+          "name": "ancient-3",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/da/SeasonalRank6-3.png"
         },
         {
-          "name":"ancient-4",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/d/db/SeasonalRank6-4.png"
+          "name": "ancient-4",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/db/SeasonalRank6-4.png"
         },
         {
-          "name":"ancient-5",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/4/47/SeasonalRank6-5.png"
+          "name": "ancient-5",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/47/SeasonalRank6-5.png"
         },
         {
           "name": "divine-1",
@@ -295,16 +152,16 @@
           "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8f/SeasonalRank7-2.png"
         },
         {
-          "name":"divine-3",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fd/SeasonalRank7-3.png"
+          "name": "divine-3",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fd/SeasonalRank7-3.png"
         },
         {
-          "name":"divine-4",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/1/13/SeasonalRank7-4.png"
+          "name": "divine-4",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/13/SeasonalRank7-4.png"
         },
         {
-          "name":"divine-5",
-          "imageRank":"https://static.wikia.nocookie.net/dota2_gamepedia/images/3/33/SeasonalRank7-5.png"
+          "name": "divine-5",
+          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/33/SeasonalRank7-5.png"
         }
       ]
     },
@@ -313,7 +170,16 @@
       "name": "League Of Legends",
       "type": "moba",
       "logo": "https://logodownload.org/wp-content/uploads/2014/09/lol-league-of-Legends-logo-1.png",
-      "statsLabels": ["Fighting", "Farming", "Vision", "Agression", "Survivability", "Objectives", "Consistency", "Versatility"],
+      "statsLabels": [
+        "Fighting",
+        "Farming",
+        "Vision",
+        "Agression",
+        "Survivability",
+        "Objectives",
+        "Consistency",
+        "Versatility"
+      ],
       "medals": [
         {
           "name": "bronce-3",
@@ -326,7 +192,11 @@
       "name": "Valorant",
       "type": "shooter",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png",
-      "statsLabels": ["Kills", "Death", "Assistance"],
+      "statsLabels": [
+        "Kills",
+        "Death",
+        "Assistance"
+      ],
       "medals": [
         {
           "name": "radiant",
@@ -339,7 +209,11 @@
       "name": "CS-GO",
       "type": "shooter",
       "logo": "https://1000marcas.net/wp-content/uploads/2020/03/Logo-CSGO.png",
-      "statsLabels": ["Kills", "Death", "Assistance"],
+      "statsLabels": [
+        "Kills",
+        "Death",
+        "Assistance"
+      ],
       "medals": [
         {
           "name": "global-elite",

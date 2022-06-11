@@ -4,6 +4,23 @@
       <button  mat-button [routerLink]="'/'"><app-logo-highlife></app-logo-highlife></button>
       <span class="menu-spacer"></span>
       <div fxShow="true" fxHide.lt-md>
+
+
+        <div ngbDropdown class="d-inline-block m-2" *ngIf="userLogged|async as user; else btnIngresar">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
+            <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30" class="d-inline-block align-top " alt="">
+            {{user.email}}
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem (click)="logout()">Salir</button>
+          </div>
+        </div>
+
+
+        <ng-template #btnIngresar>
+          <button class="btn btn-outline-primary m-2" routerLink="/login">Ingresar</button>
+        </ng-template>
+
         <button mat-button [routerLink]="'/'">Games</button>
         <button mat-button [routerLink]="'/'">Play</button>
         <button mat-button [routerLink]="'/'">More</button>

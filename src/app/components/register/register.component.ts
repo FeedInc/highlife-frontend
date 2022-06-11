@@ -1,5 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import {AuthService} from "../../services/auth.service";
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {AuthService} from "../../services/firebase-auth/auth.service";
+import {UsersService} from "../../services/user/users.service";
+import {Users} from "../../models/users";
+import { NgForm } from "@angular/forms";
+import {Router} from "@angular/router";
+
+
 
 @Component({
   selector: 'app-register',
@@ -12,19 +18,36 @@ export class RegisterComponent implements OnInit {
     email:'',
     password:''
   }
+  userData!: Users;
+  @ViewChild("userForm", { static: false }) userForm!: NgForm;
 
-  constructor(private authService: AuthService) {
+  constructor( private serviceUser: UsersService,private authService: AuthService,public router: Router) {
+
+    this.userData = {} as Users
 
   }
 
   signUp(){
     console.log(this.user)
     const{email,password}=this.user
-    this.authService.register(email,password).then(res=>{
+    this.authService.register(email, password).then(res=>{
       console.log("se registro: ",res);
     })
   }
+  addUser(): void {
+    const newUser = {firstName: this.userData.firstName,lastName: this.userData.lastName, nickName: this.userData.nickName, email: this.user.email}
+    this.serviceUser.addUsers(newUser).subscribe(() => {
+    });
+  }
 
+  onSubmit() {
+    if(this.userForm.form.valid) {
+      this.addUser()
+      this.signUp()
+    }else {
+      console.log("Invalid data!")
+    }
+  }
   ngOnInit(): void {
   }
 
