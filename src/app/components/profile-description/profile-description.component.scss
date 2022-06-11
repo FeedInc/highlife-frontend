@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 $dark-marine: #0D1B29;
-
 // * {
 //   font-family: 'Share Tech Mono', monospace;
 //   color: white;
@@ -12,29 +13,35 @@ $dark-marine: #0D1B29;
 
 
 h1 {
-  font-family: 'Share Tech Mono', monospace;
-  color: rgb(0, 206, 195);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: #E7ECEF;
 }
 
 h1.main-title {
-  color: rgb(221, 0, 74);
+  color: #ffffff;
   font-size: 2.2rem;
+  margin-left: 2rem;
 }
 
 p, li, span {
-  font-family: 'Share Tech', monospace;
+  font-family: 'Poppins', sans-serif;
 }
-
+.profile{
+  //margin-top: 2rem;
+  display: flex;
+  height: 93.5vh;
+}
 mat-card {
-  width: 1000px;
-  margin-bottom: 30px;
-  background-color: $dark-marine;
+  //width: 50rm;
+  //margin-bottom: 30px;
+  background-color: transparent;
 }
 
 mat-card.info {
   display: grid;
   grid-template-rows: 50px repeat(3, 1fr);
   grid-template-columns: 1fr 2fr;
+  width: 75%;
 }
 
 mat-card.info > mat-card-title {
@@ -44,7 +51,7 @@ mat-card.info > mat-card-title {
 
 mat-card > mat-card-content:nth-child(2) {
   grid-row: 2 / 5;
-  grid-column: 1 / span(100px);
+  grid-column: 1 / span 100px;
 }
 
 mat-card > mat-card-content:nth-child(3) {
@@ -65,8 +72,8 @@ mat-card-subtitle p {
 }
 
 .mat-card-avatar {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   object-fit: fill;
 }
 
@@ -101,7 +108,7 @@ mat-card-content.description > mat-card-subtitle {
   flex-direction: column;
 }
 
-.ranks-container > img {
+.ranks-container img {
   width: 150px;
 }
 
@@ -114,12 +121,13 @@ mat-card-content.description > mat-card-subtitle {
 
 .stats {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 50px;
 }
 
 .chart-card {
-  height: 500px;
+  width: 500px;
 }
 
 .social-container {

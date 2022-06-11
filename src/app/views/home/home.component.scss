@@ -1,3 +1,11 @@
-p {
-  color: white;
+* {
+  margin: 0;
+  padding: 0;
 }
+.background-image {
+background-image: url("Dota2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 93.5vh;
+}
+

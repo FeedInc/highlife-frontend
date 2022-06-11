@@ -1,10 +1,9 @@
-  <mat-toolbar style="background: #e5e3e3">
+  <mat-toolbar class="bg">
     <mat-toolbar-row>
       <button mat-button (click)="sidenav.toggle()" ><mat-icon>menu</mat-icon></button>
       <button  mat-button [routerLink]="'/'"><app-logo-highlife></app-logo-highlife></button>
       <span class="menu-spacer"></span>
       <div fxShow="true" fxHide.lt-md>
-
 
         <div ngbDropdown class="d-inline-block m-2" *ngIf="userLogged|async as user; else btnIngresar">
           <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
@@ -12,20 +11,17 @@
             {{user.email}}
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem (click)="logout()">Salir</button>
+            <button ngbDropdownItem (click)="logout()">Logout</button>
           </div>
         </div>
 
-
         <ng-template #btnIngresar>
-          <button class="btn btn-outline-primary m-2" routerLink="/login">Ingresar</button>
+          <button class="btn btn-outline-primary" routerLink="/login">Login</button>
         </ng-template>
-
-        <button mat-button [routerLink]="'/'">Games</button>
-        <button mat-button [routerLink]="'/'">Play</button>
-        <button mat-button [routerLink]="'/'">More</button>
-        <button mat-button [routerLink]="'/login'">Login</button>
-        <button mat-button [routerLink]="'/sign-up'">Sign up</button>
+        <button class="btn btn-outline-danger m-2" mat-button  [routerLink]="'/sign-up'">Sign up</button>
+        <button mat-button style="  color: white;" [routerLink]="'/'">Games</button>
+        <button mat-button style="  color: white;" [routerLink]="'/'">Play</button>
+        <button mat-button style="  color: white;" [routerLink]="'/'">More</button>
       </div>
     </mat-toolbar-row>
   </mat-toolbar>
@@ -93,9 +89,9 @@
 
     </mat-sidenav>
 
-    <mat-sidenav-content>
+<!--    <mat-sidenav-content>-->
       <div class="sidenav">
         <router-outlet></router-outlet>
       </div>
-    </mat-sidenav-content>
+<!--    </mat-sidenav-content>-->
   </mat-sidenav-container>

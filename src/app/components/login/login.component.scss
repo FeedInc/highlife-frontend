@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 $yellow-duck: #FFA737;
 
 .bgWhite {
@@ -6,19 +7,18 @@ $yellow-duck: #FFA737;
   background-color: white;
 }
 .font-b {
-  font-family: "Bebas Neue",sans-serif;
-  font-size: 3.5rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 8vw;
   color: $yellow-duck;
-}
-.center {
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
-  margin-top: 2rem;
+  align-items: center;
+  height: 20vh;
 }
+
 .logo span {
   font-family: "high-life", sans-serif;
-  font-size: 10rem;
+  font-size: 3rem;
 }
 .logo span:nth-child(2),
 .logo span:nth-child(1) {
@@ -29,7 +29,7 @@ $yellow-duck: #FFA737;
   color: white;
 }
 .logo img {
-  width: 2rem;
+  width: 0.6rem;
   vertical-align:baseline;
 }
 
@@ -44,6 +44,16 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+.card {
+  //color: white;
 }
 
-
+.background-image {
+  background-image: url("bgTi.jpg");
+  background-size: cover;
+  //background-repeat: no-repeat;
+  height: 100vh;
+}

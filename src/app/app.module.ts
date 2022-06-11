@@ -32,6 +32,7 @@ import {AppChartDynamicComponent} from "./components/app-chart-dynamic/app-chart
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatTableModule} from "@angular/material/table";
 import {MatCardModule} from "@angular/material/card";
+import { TournamentsComponent } from './components/tournaments/tournaments.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import {MatCardModule} from "@angular/material/card";
     LogoHighlifeComponent,
     StudentProfileComponent,
     ProfileDescriptionComponent,
-    AppChartDynamicComponent
+    AppChartDynamicComponent,
+    TournamentsComponent
   ],
   imports: [
     BrowserModule,

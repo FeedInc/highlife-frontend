@@ -1,9 +1,4 @@
 $cream: rgb(252, 251, 239);
-// canvas {
-//   width: 400px !important;
-//   height: 400px !important;
-// }
-
 .flex {
   display: flex;
   flex-direction: column;
@@ -11,7 +6,8 @@ $cream: rgb(252, 251, 239);
 }
 
 .chart-card {
-  cursor: pointer;
+  //cursor: pointer;
+  display: flex;
   padding: 20px;
   background-color: $cream;
   border-radius: 20px;
