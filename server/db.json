@@ -1,6 +1,112 @@
 {
   "users": [
-
+    {
+      "id": "23GH",
+      "type": "padawan",
+      "gender": "female",
+      "name": {
+        "title": "Ms",
+        "first": "کیانا",
+        "last": "نكو نظر"
+      },
+      "medals": [
+        {
+          "game": "dota2",
+          "medal": "guardian-4"
+        },
+        {
+          "game": "lol",
+          "medal": "bronce-3"
+        }
+      ],
+      "games": [
+        "lol",
+        "dota2"
+      ],
+      "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien",
+      "location": {
+        "street": {
+          "number": 7993,
+          "name": "میدان دکتر فاطمی / جهاد"
+        },
+        "city": "بروجرد",
+        "state": "کهگیلویه و بویراحمد",
+        "country": "Iran",
+        "postcode": 12366,
+        "coordinates": {
+          "latitude": "28.9607",
+          "longitude": "126.7840"
+        },
+        "timezone": {
+          "offset": "+10:00",
+          "description": "Eastern Australia, Guam, Vladivostok"
+        }
+      },
+      "email": "khyn.nkwnzr@example.com",
+      "login": {
+        "uuid": "ebefcb3e-098d-4ef6-bd7a-60b29f97f9a5",
+        "username": "redgorilla126",
+        "password": "jolly",
+        "salt": "KI148zD2",
+        "md5": "f7b731d2db5b5b2ade54694e6e90e441",
+        "sha1": "71b3502ea012d5754fe96cce5aaec765fae7015f",
+        "sha256": "b0a9db814e387be2ef355a65102a4d13f38943a25e1c2dd9afb1b5285163fa2a"
+      },
+      "dob": {
+        "date": "1983-10-13T00:38:19.993Z",
+        "age": 39
+      },
+      "registered": {
+        "date": "2005-06-23T08:42:34.835Z",
+        "age": 17
+      },
+      "phone": "095-49563609",
+      "cell": "0975-766-0030",
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/59.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/59.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/59.jpg"
+      },
+      "nat": "IR",
+      "stats": [
+        {
+          "gameId": "dota2",
+          "data": [
+            20,
+            30,
+            40,
+            10,
+            20
+          ]
+        },
+        {
+          "gameId": "lol",
+          "data": [
+            70,
+            35,
+            42,
+            19,
+            42,
+            90,
+            28,
+            90
+          ]
+        }
+      ]
+    },
+    {
+      "firstName": "adrian",
+      "lastName": "esqueiros",
+      "nickName": "adrian",
+      "email": "adrex@hotmail.es",
+      "id": "ABi63Da",
+      "name": {
+        "title": "Ms",
+        "first": "کیانا",
+        "last": "نكو نظر"
+      },
+      "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien"
+    }
   ],
   "comments": [
     {

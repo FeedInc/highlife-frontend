@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from "./views/home/home.component"
 import {LoginComponent} from "./components/login/login.component";
 import {RegisterComponent} from "./components/register/register.component";
+import {StudentProfileComponent} from "./views/student-profile/student-profile.component";
 
 
 const routes: Routes = [
@@ -16,6 +17,8 @@ const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "login", component: LoginComponent },
   { path:"sign-up", component:RegisterComponent},
+  { path: "student/:studentId", component: StudentProfileComponent },
+
 
 ];
 

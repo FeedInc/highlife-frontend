@@ -1,0 +1,49 @@
+<mat-card class="info">
+  <mat-card-title> <h1 class = "main-title"> Profile </h1> </mat-card-title>
+  <mat-card-content class="social">
+    <mat-card-header>
+      <img mat-card-avatar [src]="user?.picture?.large" class="header-image" alt="userPhoto" />
+      <mat-card-title>
+        <p>{{ completeName }}</p>
+      </mat-card-title>
+      <mat-card-subtitle>
+        <p>{{ userType }}</p>
+        <p> Location: {{ location }} </p>
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <div *ngFor="let social of socials" class="social-container">
+        <button mat-icon-button>
+          <mat-icon [class]="social.class" class="icon"></mat-icon>
+        </button>
+        <span> {{ social.name }} </span>
+      </div>
+    </mat-card-actions>
+  </mat-card-content>
+
+  <mat-card-content class="description">
+    <mat-card-subtitle> <h1> Biography </h1> </mat-card-subtitle>
+    <p>{{ user?.biography }}</p>
+    <mat-card-subtitle> <h1> Games </h1> </mat-card-subtitle>
+    <ul *ngFor="let game of games">
+      <li>{{ game?.name }}</li>
+    </ul>
+    <mat-card-subtitle> <h1> Medals </h1> </mat-card-subtitle>
+    <div class="ranks-container">
+      <div class="rank" *ngFor="let medal of medals" >
+        <span> <strong> {{ medal?.nameGame }} </strong> </span>
+        <img [src]="medal?.medalData?.imageRank" width="55px" alt="medal" />
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<mat-card id="stats-section">
+  <mat-card-title> <h1> User Statistics </h1> </mat-card-title>
+  <div class="stats">
+    <app-chart-dynamic [datasChart]="dataChart" [idNumber]="i" *ngFor="let dataChart of datasChart; let i = index;">
+    </app-chart-dynamic>
+  </div>
+
+  <!-- <app-chart-dynamic [datasChart] = "datasChart[0]" [idNumber]="0"></app-chart-dynamic> -->
+</mat-card>

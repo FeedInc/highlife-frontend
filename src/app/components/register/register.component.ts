@@ -1,6 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {AuthService} from "../../services/firebase-auth/auth.service";
-import {UsersService} from "../../services/user/users.service";
+import {UsersApiService} from "../../services/users-api.service";
 import {Users} from "../../models/users";
 import { NgForm } from "@angular/forms";
 import {Router} from "@angular/router";
@@ -21,7 +21,7 @@ export class RegisterComponent implements OnInit {
   userData!: Users;
   @ViewChild("userForm", { static: false }) userForm!: NgForm;
 
-  constructor( private serviceUser: UsersService,private authService: AuthService,public router: Router) {
+  constructor( private serviceUser: UsersApiService,private authService: AuthService,public router: Router) {
 
     this.userData = {} as Users
 

@@ -26,6 +26,12 @@ import {RegisterComponent} from "./components/register/register.component";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {HttpClientModule} from "@angular/common/http";
+import { StudentProfileComponent } from './views/student-profile/student-profile.component';
+import {ProfileDescriptionComponent} from "./components/profile-description/profile-description.component";
+import {AppChartDynamicComponent} from "./components/app-chart-dynamic/app-chart-dynamic.component";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatTableModule} from "@angular/material/table";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -34,9 +40,26 @@ import {HttpClientModule} from "@angular/common/http";
     LoginComponent,
     RegisterComponent,
     NavbarComponent,
-    LogoHighlifeComponent
+    LogoHighlifeComponent,
+    StudentProfileComponent,
+    ProfileDescriptionComponent,
+    AppChartDynamicComponent
   ],
   imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatTableModule,
+    MatGridListModule,
+    HttpClientModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
@@ -45,14 +68,15 @@ import {HttpClientModule} from "@angular/common/http";
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
     LayoutModule,
     MatListModule,
     FlexLayoutModule,
     NgbModule,
     MatFormFieldModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
