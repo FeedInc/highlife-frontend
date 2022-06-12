@@ -30,9 +30,8 @@
     "chart.js": "^3.8.0",
     "firebase": "^9.8.3",
     "json-server": "^0.17.0",
-    "loadash": "^1.0.0",
-    "loadsh": "^0.0.4",
     "lodash": "^4.17.21",
+    "prettier": "^2.6.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

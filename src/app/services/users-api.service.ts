@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { catchError, Observable, retry, throwError } from "rxjs";
-import { Users} from '../models/users';
+import { User} from '../models/user';
 
 @Injectable({
   providedIn: 'root'
@@ -29,8 +29,8 @@ export class UsersApiService {
   }
 
   // Create Users
-  addUsers(item: any): Observable<Users> {
-    return this.http.post<Users>(this.basePath, JSON.stringify(item),this.httpOptions)
+  addUsers(item: any): Observable<User> {
+    return this.http.post<User>(this.basePath, JSON.stringify(item),this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 

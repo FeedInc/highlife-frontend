@@ -33,6 +33,9 @@ import {MatGridListModule} from "@angular/material/grid-list";
 import {MatTableModule} from "@angular/material/table";
 import {MatCardModule} from "@angular/material/card";
 import { TournamentsComponent } from './components/tournaments/tournaments.component';
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {TournamentsService} from "./services/tournaments.service";
+import {MatSortModule} from "@angular/material/sort";
 
 @NgModule({
   declarations: [
@@ -47,40 +50,42 @@ import { TournamentsComponent } from './components/tournaments/tournaments.compo
     AppChartDynamicComponent,
     TournamentsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatListModule,
-    MatSidenavModule,
-    MatCardModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatTableModule,
-    MatGridListModule,
-    HttpClientModule,
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatSidenavModule,
-    MatButtonModule,
-    MatIconModule,
-    MatToolbarModule,
-    LayoutModule,
-    MatListModule,
-    FlexLayoutModule,
-    NgbModule,
-    MatFormFieldModule,
-    MatInputModule,
-    HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatListModule,
+        MatSidenavModule,
+        MatCardModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatTableModule,
+        MatGridListModule,
+        HttpClientModule,
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatSidenavModule,
+        MatButtonModule,
+        MatIconModule,
+        MatToolbarModule,
+        LayoutModule,
+        MatListModule,
+        FlexLayoutModule,
+        NgbModule,
+        MatFormFieldModule,
+        MatInputModule,
+        HttpClientModule,
+        AngularFireModule.initializeApp(environment.firebaseConfig),
+        MatPaginatorModule,
+        MatSortModule,
 
-  ],
-  providers: [],
+    ],
+  providers: [TournamentsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
