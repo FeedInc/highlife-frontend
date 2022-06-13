@@ -3,11 +3,18 @@
   padding: 0;
 }
 .background-image {
-background-image: url("Dota2.png");
+background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/backgrounds/greyfade.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  //height: 93.5vh;
+  height: 93.5vh;
+  min-height: auto;
   //background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+.gradient {
+  position: relative;
+  overflow: hidden;
+  background: #1e1e1e;
+  background: linear-gradient(90deg,rgba(30,30,30,.25),rgba(30,30,30,.25) 20%,rgba(30,30,30,.1) 80%,rgba(30,30,30,.25));
+}

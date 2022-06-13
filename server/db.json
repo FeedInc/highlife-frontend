@@ -120,11 +120,12 @@
       "id": "dota2",
       "name": "Dota 2",
       "type": "moba",
+      "image": "https://epulze.com/static/build/dota2_landing_page_image.png",
       "logo": "https://1000marcas.net/wp-content/uploads/2020/02/Dota-2-Logo.png",
       "statsLabels": [
         "Fighting",
         "Farming",
-        "Suporting",
+        "Supporting",
         "Pushing",
         "Versatility"
       ],
@@ -275,6 +276,7 @@
       "id": "lol",
       "name": "League Of Legends",
       "type": "moba",
+      "image":"https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt5abbad4f1d1da663/602457cff4a7946af0338221/LOL_Key_Art_2021_318x428_RiotBar.jpg??format=pjpg&quality=85",
       "logo": "https://logodownload.org/wp-content/uploads/2014/09/lol-league-of-Legends-logo-1.png",
       "statsLabels": [
         "Fighting",
@@ -297,6 +299,7 @@
       "id": "valorant",
       "name": "Valorant",
       "type": "shooter",
+      "image":"https://epulze.com/static/build/valorant_landing_page_image.png",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png",
       "statsLabels": [
         "Kills",
@@ -314,6 +317,7 @@
       "id": "csgo",
       "name": "CS-GO",
       "type": "shooter",
+      "image": "https://epulze.com/static/build/csgo_landing_page_image.png",
       "logo": "https://1000marcas.net/wp-content/uploads/2020/03/Logo-CSGO.png",
       "statsLabels": [
         "Kills",
@@ -348,7 +352,8 @@
       "address": "Europe",
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 2
-    },{
+    },
+    {
       "name": "Torneo 1",
       "game": "Dota 2",
       "gameType": "5 vs 5",
@@ -367,8 +372,7 @@
       "address": "Europe",
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 4
-    },
-    {
+    },   {
       "name": "Torneo 1",
       "game": "Dota 2",
       "gameType": "5 vs 5",
@@ -377,8 +381,7 @@
       "address": "Europe",
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 5
-    },
-    {
+    },   {
       "name": "Torneo 1",
       "game": "Dota 2",
       "gameType": "5 vs 5",
@@ -388,6 +391,8 @@
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 6
     },
+
+
     {
       "name": "Torneo 1",
       "game": "Dota 2",
@@ -408,7 +413,5 @@
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 8
     }
-
-
   ]
 }

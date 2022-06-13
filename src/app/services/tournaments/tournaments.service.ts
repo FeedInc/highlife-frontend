@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from "@angular/common/http";
 import { catchError, Observable, retry, throwError } from "rxjs";
-import { Tournaments} from "../models/tournaments";
+import { Tournaments} from "../../models/tournaments";
 
 @Injectable({
   providedIn: 'root'
 })
 export class TournamentsService {
   // Students Endpoint
-  basePath = 'http://localhost:3131/api/v1/tournaments';
+  basePath = 'http://localhost:3000/api/v1/tournaments';
 
   httpOptions = {
     headers: new HttpHeaders({

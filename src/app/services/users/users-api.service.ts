@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { catchError, Observable, retry, throwError } from "rxjs";
-import { User} from '../models/user';
+import { Users} from '../../models/users';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersApiService {
 
-  port = 3131;
+  port = 3000;
   basePath = `http://localhost:${this.port}/api/v1/users`;
   //pass automatically to attribute. Generate 2 instances the value you pass and the value yo get.
   constructor(private http: HttpClient) {}
@@ -29,8 +29,8 @@ export class UsersApiService {
   }
 
   // Create Users
-  addUsers(item: any): Observable<User> {
-    return this.http.post<User>(this.basePath, JSON.stringify(item),this.httpOptions)
+  addUsers(item: any): Observable<Users> {
+    return this.http.post<Users>(this.basePath, JSON.stringify(item),this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 

@@ -17,22 +17,20 @@ mat-form-field {
 }
 .table-wrapper {
   font-family: 'Poppins', sans-serif;
-
   width:97%;
   box-shadow: 21px 41px 35px -1px rgba(0,0,0,0.59);
   -webkit-box-shadow: 21px 41px 35px -1px rgba(0,0,0,0.59);
-  -moz-box-shadow: 21px 41px 35px -1px rgba(0,0,0,0.59);}
+  -moz-box-shadow: 21px 41px 35px -1px rgba(0,0,0,0.59);
+}
 
 table {
   width: 100%;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
-
 }
 .mat-header-cell {
   color: white;
   font-family: 'Poppins', sans-serif;
-
 }
 .mat-cell {
   color: white;
@@ -40,7 +38,6 @@ table {
 .mat-paginator, .mat-paginator-page-size .mat-select-trigger {
   //background-color: transparent;
   font-family: 'Poppins', sans-serif;
-
   background-color: rgba(255, 255, 255, 0.87) !important;
 }
 

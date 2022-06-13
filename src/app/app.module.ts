@@ -34,9 +34,10 @@ import {MatTableModule} from "@angular/material/table";
 import {MatCardModule} from "@angular/material/card";
 import { CreateTournamentsComponent } from './views/create-tournaments/create-tournaments.component';
 import {MatPaginatorModule} from "@angular/material/paginator";
-import {TournamentsService} from "./services/tournaments.service";
+import {TournamentsService} from "./services/tournaments/tournaments.service";
 import {MatSortModule} from "@angular/material/sort";
 import { TournamentCardComponent } from './components/tournament-card/tournament-card.component';
+import { GamesCardComponent } from './components/games-card/games-card.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { TournamentCardComponent } from './components/tournament-card/tournament
     ProfileDescriptionComponent,
     AppChartDynamicComponent,
     CreateTournamentsComponent,
-    TournamentCardComponent
+    TournamentCardComponent,
+    GamesCardComponent
   ],
     imports: [
         BrowserModule,

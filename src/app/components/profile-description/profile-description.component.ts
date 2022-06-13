@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {UsersApiService} from '../../services/users-api.service';
-import {ToolsService} from '../../services/tools.service';
-import {GamesApiService} from 'src/app/services/games-api.service';
+import {UsersApiService} from '../../services/users/users-api.service';
+import {ToolsService} from '../../services/tools/tools.service';
+import {GamesApiService} from 'src/app/services/games/games-api.service';
 
 import {forkJoin, switchMap} from 'rxjs';
 
