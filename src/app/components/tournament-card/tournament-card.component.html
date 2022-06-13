@@ -1,0 +1,21 @@
+<div class = "flex">
+  <div style="margin: 2rem 1rem">
+    <mat-card>
+      <mat-card-title> Current Tournaments Count </mat-card-title>
+      <mat-card-content>
+        <span> Available Tournaments: </span> <span> <strong>{{ offersArray.length }}</strong></span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<div class="grid3c">
+    <mat-card *ngFor="let offer of offersArray">
+      <mat-card-header><img class="card-img" style="margin-bottom:1rem " alt="tournament image" src="{{offer.urlToImage}}"></mat-card-header>
+      <mat-card-title> {{ offer.name  }} </mat-card-title>
+      <mat-card-content>
+        <p> Date: {{ offer.date   }} </p>
+        <p> Game: {{ offer.game }} </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+

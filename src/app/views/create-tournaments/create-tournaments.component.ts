@@ -8,11 +8,11 @@ import {MatSort} from "@angular/material/sort";
 // @ts-ignore
 import * as _ from "lodash";
 @Component({
-  selector: 'app-tournaments',
-  templateUrl: './tournaments.component.html',
-  styleUrls: ['./tournaments.component.scss']
+  selector: 'app-create-tournaments',
+  templateUrl: './create-tournaments.component.html',
+  styleUrls: ['./create-tournaments.component.scss']
 })
-export class TournamentsComponent implements OnInit, AfterViewInit {
+export class CreateTournamentsComponent implements OnInit, AfterViewInit {
 
   tournamentData: Tournaments;
   dataSource: MatTableDataSource<any>;

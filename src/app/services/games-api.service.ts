@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 export class GamesApiService {
 
 
-  port = 4000;
+  port = 3131;
   baseUrl = `http://localhost:${this.port}/games`;
   constructor(private http: HttpClient) {}
   httpOptions = {

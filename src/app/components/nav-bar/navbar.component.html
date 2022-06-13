@@ -35,6 +35,13 @@
           <a mat-button [routerLink]="'/'" class="source-name"> Create a Team</a>
         </mat-list-item>
       </mat-nav-list>
+      <mat-nav-list>
+        <span class="side-title"><mat-icon class="icon"><img src="https://cdn-icons-png.flaticon.com/512/109/109812.png" alt="trophy" width="25" height="25"></mat-icon>Tournament</span>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" (click)="sidenav.close()">
+          <a mat-button [routerLink]="'new-tournament'" class="source-name"> Create a Tournament</a>
+        </mat-list-item>
+      </mat-nav-list>
 
       <mat-nav-list>
         <span class="side-title"><mat-icon class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2972/2972351.png" alt="games"></mat-icon>My games</span>

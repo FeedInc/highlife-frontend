@@ -32,10 +32,11 @@ import {AppChartDynamicComponent} from "./components/app-chart-dynamic/app-chart
 import {MatGridListModule} from "@angular/material/grid-list";
 import {MatTableModule} from "@angular/material/table";
 import {MatCardModule} from "@angular/material/card";
-import { TournamentsComponent } from './components/tournaments/tournaments.component';
+import { CreateTournamentsComponent } from './views/create-tournaments/create-tournaments.component';
 import {MatPaginatorModule} from "@angular/material/paginator";
 import {TournamentsService} from "./services/tournaments.service";
 import {MatSortModule} from "@angular/material/sort";
+import { TournamentCardComponent } from './components/tournament-card/tournament-card.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import {MatSortModule} from "@angular/material/sort";
     StudentProfileComponent,
     ProfileDescriptionComponent,
     AppChartDynamicComponent,
-    TournamentsComponent
+    CreateTournamentsComponent,
+    TournamentCardComponent
   ],
     imports: [
         BrowserModule,
