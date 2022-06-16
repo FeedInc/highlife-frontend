@@ -5,6 +5,8 @@ import { map, shareReplay } from 'rxjs/operators';
 import {AuthService} from "../../services/firebase-auth/auth.service";
 import {Router} from "@angular/router";
 
+
+
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './navbar.component.html',
@@ -12,6 +14,12 @@ import {Router} from "@angular/router";
 })
 export class NavbarComponent {
   userLogged = this.authService.getUserLogged();
+
+  foods: any[] = [
+    {value: 'steak-0', viewValue: 'Steak'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'},
+  ];
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(

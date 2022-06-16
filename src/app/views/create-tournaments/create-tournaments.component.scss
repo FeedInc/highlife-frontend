@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.text-config {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
 .background {
   background-image: url("dota.png");
   height: 93.5vh;
@@ -12,7 +18,7 @@
   align-items: center;
 }
 mat-form-field {
-  color: white;
+  //color: white;
   font-family: 'Poppins', sans-serif;
 }
 .table-wrapper {
@@ -27,13 +33,19 @@ table {
   width: 100%;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
+
 }
+
 .mat-header-cell {
   color: white;
   font-family: 'Poppins', sans-serif;
 }
 .mat-cell {
   color: white;
+}
+
+ mat-form-field{
+  background-color: white ;
 }
 .mat-paginator, .mat-paginator-page-size .mat-select-trigger {
   //background-color: transparent;

@@ -1,15 +1,15 @@
 <div class = "flex">
   <div style="margin: 2rem 1rem">
     <mat-card>
-      <mat-card-title> Current Tournaments Count </mat-card-title>
+      <mat-card-title> Current Tournaments </mat-card-title>
       <mat-card-content>
-        <span> Available Tournaments: </span> <span> <strong>{{ offersArray.length }}</strong></span>
+        <span> Available Tournaments: </span> <span> <strong>{{ tournaments.length }}</strong></span>
       </mat-card-content>
     </mat-card>
   </div>
 </div>
-<div class="grid3c">
-    <mat-card *ngFor="let offer of offersArray">
+<div class="container-grid">
+    <mat-card *ngFor="let offer of tournaments">
       <mat-card-header><img class="card-img" style="margin-bottom:1rem " alt="tournament image" src="{{offer.urlToImage}}"></mat-card-header>
       <mat-card-title> {{ offer.name  }} </mat-card-title>
       <mat-card-content>

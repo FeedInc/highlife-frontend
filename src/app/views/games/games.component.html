@@ -1,0 +1,15 @@
+<div class="container-game">
+  <img class="banner" src="{{game?.banner }}" alt="game{{game?.id}}">
+  <img class="background" src="{{game?.background}}" alt="background">
+</div>
+<div class="position" style="display: flex; justify-content: space-between">
+  <div class="text-welcome">
+    <div style="margin-bottom: 2rem">Welcome to</div>
+    <img class="logo" src="{{game?.logo}}" alt="logo {{game?.id}}">
+  </div>
+  <div class="tournament-card">
+    <app-tournament-card></app-tournament-card>
+  </div>
+</div>
+
+

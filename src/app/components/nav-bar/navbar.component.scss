@@ -1,101 +1,3 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
-$dark-blue: #081424;
-$dark-blue-2: #212833;
-$yellow-duck: #FFA737;
-
-
-mat-sidenav-content {
-  background: $dark-blue-2;
-}
-
-
-button {
-  font-family: "Comfortaa", sans-serif;
-  color : $dark-blue;
-}
-button mat-icon {
-  color: $yellow-duck;
-}
-button mat-icon:hover {
-  color: $dark-blue-2;
-}
-
-
-mat-toolbar {
-  display: flex;
-  align-content: center;
-}
-
-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-family: "Comfortaa", cursive;
-
-}
-
-button mat-icon:hover {
-  color: $yellow-duck;
-}
-mat-sidenav-container {
-  font-family: "Comfortaa", cursive;
-
-}
-
-.dark-primary {
-  background-color: $dark-blue;
-}
-
-.image-avatar {
-  width: 40px;
-  height: 40px;
-}
-
-.image-avatar img {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-}
-.default-spacer {
-  flex: 1 1 auto;
-}
-.sidenav {
-  min-height: 100vh;
-  background-color: transparent;
-  margin: 20px;
-}
-.sidenav-container {
-  background-color:$dark-blue;
-  width: 100%;
-  height: auto;
-  border: 1px solid rgba(111, 111, 111, 0.50);
-}
-.sidenav-content {
-  display: flex;
-  height: 100%;
-  width: 17rem;
-  align-items: center;
-  justify-content: center;
-}
-.list-item {
-  display: flex;
-}
-.list-item:hover {
-  cursor: pointer;
-  color: $yellow-duck;
-}
-.source-name {
-  margin-left: 5px;
-}
-.icon {
-  margin-right: 25px;
-}
-.side-title {
-  margin: 20px;
-  font-weight: bold;
-}*/
-
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 $dark-blue: #081424;
@@ -104,7 +6,15 @@ $yellow-duck: #FFA737;
 .menu-spacer {
   flex: 1 1 auto;
 }
-
+.btn-nav {
+  display: flex;
+  margin-right: 10rem;
+}
+.profile-btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
 a{
   font-family: "Comfortaa", sans-serif;
 
@@ -138,12 +48,16 @@ mat-nav-list img {
 .dark-primary {
   background-color: white;
 }
+.dropdown-menu.show {
+  display: block;
+  position: absolute;
+  //transform: translate(286px, -12px) !important
+}
 .bg {
-  //position: absolute;
   width: 100%;
   height: 100%;
   opacity: .9;
-  background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/blog/default_header.jpg);
+  background-image: url(https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/clans/3703047/eb48d2ef17dbf16639c9106b03b588671ebfe76d.png);
   //background-size: 100%;
   background-size: cover;
   background-position: center;
@@ -165,6 +79,7 @@ mat-nav-list img {
   flex: 1 1 auto;
 }
 .sidenav {
+  position: relative;
   min-height: 93.5vh;
 }
 .sidenav-container {

@@ -120,8 +120,11 @@
       "id": "dota2",
       "name": "Dota 2",
       "type": "moba",
-      "image": "https://epulze.com/static/build/dota2_landing_page_image.png",
-      "logo": "https://1000marcas.net/wp-content/uploads/2020/02/Dota-2-Logo.png",
+      "background": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//blog/bg_repeater.jpg",
+      "image": "https://i.ibb.co/mRZj8dX/dota2-landing-page-image-2x.webp",
+      "banner": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/blog/default_header.jpg",
+
+      "logo": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png",
       "statsLabels": [
         "Fighting",
         "Farming",
@@ -277,6 +280,8 @@
       "name": "League Of Legends",
       "type": "moba",
       "image":"https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt5abbad4f1d1da663/602457cff4a7946af0338221/LOL_Key_Art_2021_318x428_RiotBar.jpg??format=pjpg&quality=85",
+      "banner": "https://www.leagueoflegends.com/static/htp_hero_06-26c3fefbba4fcb12fce710e22e3b7882.png",
+      "background": "https://www.leagueoflegends.com/static/base-3x-17b11ad755c37c6f9064ef950e31b409.png",
       "logo": "https://logodownload.org/wp-content/uploads/2014/09/lol-league-of-Legends-logo-1.png",
       "statsLabels": [
         "Fighting",
@@ -299,7 +304,9 @@
       "id": "valorant",
       "name": "Valorant",
       "type": "shooter",
-      "image":"https://epulze.com/static/build/valorant_landing_page_image.png",
+      "banner": "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8353cbd513234cc6/6261bc2e1574214ead420a52/Valorant_2022_E4A3_PlayVALORANT_PlayValorantHomepage.jpg",
+      "background": "https://playvalorant.com/assets/images/agents-background.jpg",
+      "image":"https://i.ibb.co/FYhpnVx/valorant-landing-page-image-2x.webp",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png",
       "statsLabels": [
         "Kills",
@@ -317,7 +324,9 @@
       "id": "csgo",
       "name": "CS-GO",
       "type": "shooter",
-      "image": "https://epulze.com/static/build/csgo_landing_page_image.png",
+      "image": "https://i.ibb.co/48rw36y/csgo-landing-page-image-2x.webp",
+      "banner": "https://cdn.akamai.steamstatic.com/apps/csgo/images/dust2/bg_01.png?v=2",
+      "background": "http://media.steampowered.com/apps/csgo/blog/images/armsdeal/bg1.jpg",
       "logo": "https://1000marcas.net/wp-content/uploads/2020/03/Logo-CSGO.png",
       "statsLabels": [
         "Kills",

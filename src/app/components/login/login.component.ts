@@ -13,8 +13,6 @@ export class LoginComponent implements OnInit {
     password:''
   }
 
-
-
   constructor(private authService: AuthService, private router: Router) {
 
   }
@@ -24,14 +22,14 @@ export class LoginComponent implements OnInit {
     const{email,password}=this.user
     this.authService.login(email,password).then(res=>{
       console.log("se registro: ",res);
-      this.router.navigate(['/home'])
+      this.router.navigate([''])
     })
   }
 
   loginWithGoogle(){
     this.authService.loginWithGoogle().then(res=>{
       console.log("se registro: ",res);
-      this.router.navigate(['/home'])
+      this.router.navigate([''])
     })
   }
 

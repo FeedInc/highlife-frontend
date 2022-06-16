@@ -1,28 +1,30 @@
   <mat-toolbar class="bg">
     <mat-toolbar-row>
+
       <button mat-button (click)="sidenav.toggle()" ><mat-icon>menu</mat-icon></button>
       <button  mat-button [routerLink]="'/'"><app-logo-highlife></app-logo-highlife></button>
       <span class="menu-spacer"></span>
-      <div fxShow="true" fxHide.lt-md>
-
-        <div ngbDropdown class="d-inline-block m-2" *ngIf="userLogged|async as user; else btnIngresar">
-          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>
-            <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30" class="d-inline-block align-top " alt="">
-            {{user.email}}
-          </button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <button ngbDropdownItem (click)="logout()">Logout</button>
+      <div class="btn-nav" fxShow="true" fxHide.lt-md>
+        <button mat-button style="  color: white;" [routerLink]="'/'">Games</button>
+        <td class="overflow-hidden">
+          <div ngbDropdown container="body" *ngIf="userLogged|async as user; else btnIngresar">
+            <button class="profile-btn" mat-raised-button id="dropdownBasic" ngbDropdownToggle>
+              <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30" class="d-inline-block" alt="">
+              {{user.email}}
+            </button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic">
+              <button ngbDropdownItem (click)="logout()">Profile</button>
+              <button ngbDropdownItem (click)="logout()">Logout</button>
+            </div>
           </div>
-        </div>
+        </td>
 
         <ng-template #btnIngresar>
-          <button class="btn btn-outline-primary" routerLink="/login">Login</button>
+            <button style="margin-right: 1rem;" mat-raised-button color="primary" routerLink="/login">Login</button>
+            <button  mat-raised-button color="accent"  [routerLink]="'/sign-up'">Sign up</button>
         </ng-template>
-        <button class="btn btn-outline-danger m-2" mat-button  [routerLink]="'/sign-up'">Sign up</button>
-        <button mat-button style="  color: white;" [routerLink]="'/'">Games</button>
-        <button mat-button style="  color: white;" [routerLink]="'/'">Play</button>
-        <button mat-button style="  color: white;" [routerLink]="'/'">More</button>
       </div>
+
     </mat-toolbar-row>
   </mat-toolbar>
 
@@ -96,9 +98,9 @@
 
     </mat-sidenav>
 
-<!--    <mat-sidenav-content>-->
+    <mat-sidenav-content>
       <div class="sidenav">
         <router-outlet></router-outlet>
       </div>
-<!--    </mat-sidenav-content>-->
+    </mat-sidenav-content>
   </mat-sidenav-container>

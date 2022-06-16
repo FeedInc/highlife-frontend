@@ -3,18 +3,19 @@
     <div class="title-text ">THE FASTEST WAY <span>TO ELEVATE YOUR RANK</span></div>
     <div class="subtitle-text ">CHOOSE YOUR GAME</div>
   </div>
-
 </div>
 <div class="container">
   <div *ngFor="let game of gamesArray">
-    <div class="user-animation">
-      <div class="icon">
+    <a style="text-decoration: none" routerLink="portal/{{game.id}}">
+      <div class="game-animation">
+        <div class="icon">
         <img class="card-img" style=" " alt="tournament image" src="{{game.image}}">
         <div class="game-name">
           {{ game.name  }}
         </div>
       </div>
-    </div>
+      </div>
+    </a>
   </div>
 </div>
 

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.background {
+  width: 100%;
+  //color: #fff;
+  background-color: #15171b;
+  position: relative;
+}
+.banner {
+  object-fit: cover;
+  width: 100%;
+  height: 45vh;
+}
+.container-game {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  //color: white;
+}
+.text-welcome {
+  //display: flex;
+  align-items: center;
+  color: white;
+  font-size: 4vw;
+  font-family: "Bebas Neue",sans-serif;
+}
+.position {
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
+  //display: flex;
+  //align-items: center;
+}
+.logo {
+  height: 8vh;
+}
+.tournament-card {
+  //position: absolute;
+  //display: flex;
+  align-items: center;
+  color: white;
+  font-size: 4vw;
+}

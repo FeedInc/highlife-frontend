@@ -40,9 +40,9 @@ export class ProfileDescriptionComponent implements OnInit {
     console.log(this.user?.stats);
     let index = 0;
     for (let stats of this.user?.stats) {
-      var temp = this.games?.find((res: any) => res.id == stats.gameId);
-      var chartType = undefined;
-      var chartScales = undefined;
+      let temp = this.games?.find((res: any) => res.id == stats.gameId);
+      let chartType = undefined;
+      let chartScales = undefined;
       if(temp.type == "moba") {
         chartType = "radar";
         chartScales = {
@@ -58,7 +58,7 @@ export class ProfileDescriptionComponent implements OnInit {
       else if(temp.type == "shooter")
       chartType = "bar";
 
-      var tempDataChart = {
+      let tempDataChart = {
         logo: temp.logo,
         title: temp.name,
         dataChart: {

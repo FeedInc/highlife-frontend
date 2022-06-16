@@ -1,23 +1,24 @@
 <div class="background">
   <div class="gradient">
    <div class="table-wrapper">
-      <h1>Students Catalogue</h1>
-      <h2>{{ isEditMode ? 'Edit Student' : 'Add new Student' }}</h2>
+      <div class="text-config">My Tournaments</div>
+      <div class="text-config">{{ isEditMode ? 'Edit Tournament' : 'Create new Tournament' }}</div>
       <form (submit)="onSubmit()" #tournamentForm='ngForm'>
-
-        <mat-form-field><input matInput placeholder="Name" name="name" required [(ngModel)]="tournamentData.name"></mat-form-field>
-        <mat-form-field><input matInput placeholder="Game" name="game" required [(ngModel)]="tournamentData.game"></mat-form-field>
-        <mat-form-field><input matInput placeholder="Game Type" name="gameType" required [(ngModel)]="tournamentData.gameType"></mat-form-field>
-        <mat-form-field><input matInput placeholder="Date" name="date" required [(ngModel)]="tournamentData.date"></mat-form-field>
-        <mat-form-field><input type="number" matInput placeholder="Max Teams" name="maxTeams" required [(ngModel)]="tournamentData.maxTeams"></mat-form-field>
-        <mat-form-field><input matInput placeholder="Address" name="address" required [(ngModel)]="tournamentData.address"></mat-form-field>
-        <mat-form-field><input matInput placeholder="Url To Image" name="urlToImage" required [(ngModel)]="tournamentData.urlToImage"></mat-form-field>
-        <ng-container *ngIf="isEditMode; else elseTemplate">
-        <button mat-button color="primary">Update</button>
-        <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
-    </ng-container>
+        <div style="display: flex; justify-content: center" >
+          <mat-form-field><input matInput placeholder="Name" name="name" required [(ngModel)]="tournamentData.name"></mat-form-field>
+          <mat-form-field><input matInput placeholder="Game" name="game" required [(ngModel)]="tournamentData.game"></mat-form-field>
+          <mat-form-field><input matInput placeholder="Game Type" name="gameType" required [(ngModel)]="tournamentData.gameType"></mat-form-field>
+          <mat-form-field><input matInput placeholder="Date" name="date" required [(ngModel)]="tournamentData.date"></mat-form-field>
+          <mat-form-field><input type="number" matInput placeholder="Max Teams" name="maxTeams" required [(ngModel)]="tournamentData.maxTeams"></mat-form-field>
+          <mat-form-field><input matInput placeholder="Address" name="address" required [(ngModel)]="tournamentData.address"></mat-form-field>
+          <mat-form-field><input matInput placeholder="Url To Image" name="urlToImage" required [(ngModel)]="tournamentData.urlToImage"></mat-form-field>
+          <ng-container *ngIf="isEditMode; else elseTemplate">
+            <button mat-button color="primary">Update</button>
+            <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
+          </ng-container>
+        </div>
     <ng-template #elseTemplate>
-      <button mat-button color="primary">Add</button>
+      <button mat-raised-button	 color="accent">Add</button>
     </ng-template>
   </form>
      <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">

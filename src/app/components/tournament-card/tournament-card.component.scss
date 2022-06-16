@@ -13,15 +13,18 @@
   //align-items: center;
   //height: 93.5vh;
 }
-
-.container {
+mat-card {
+  background-color: #232425;
+  color: white;
+}
+.container-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  //margin: 3rem 3rem;
 }
 
-.container img {
-  width: auto;
-  height: 30vh;
+.card-img {
+  object-fit: cover;
+  width: 100%;
+  height: 5rem;
 }
