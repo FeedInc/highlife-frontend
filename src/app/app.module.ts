@@ -44,6 +44,7 @@ import { ProfileSettingsComponent } from './components/profile-settings/profile-
 import {MatSelectModule} from "@angular/material/select";
 
 @NgModule({
+
   declarations: [
     AppComponent,
     HomeComponent,
@@ -95,6 +96,7 @@ import {MatSelectModule} from "@angular/material/select";
     MatPaginatorModule,
     MatSortModule,
     MatSelectModule,
+
 
   ],
   providers: [TournamentsService],

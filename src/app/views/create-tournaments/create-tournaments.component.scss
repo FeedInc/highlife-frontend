@@ -7,11 +7,12 @@
 }
 
 .background {
-  background-image: url("dota.png");
+  background-image: url("https://live.staticflickr.com/65535/51600672299_d81e7ebbc6_5k.jpg");
+  background-size: cover;
   height: 93.5vh;
 }
 .gradient {
-  background-image: linear-gradient(rgba(119, 119, 119, 0.5), #0a0a0a);
+  background-image: linear-gradient(rgba(119, 119, 119, 0.2), #0a0a0a);
   height: 93.5vh;
   display: flex;
   justify-content: center;
@@ -45,12 +46,15 @@ table {
 }
 
  mat-form-field{
-  background-color: white ;
+  //background-color: white ;
+   color: white;
+   font-size: 1.2rem;
 }
 .mat-paginator, .mat-paginator-page-size .mat-select-trigger {
   //background-color: transparent;
   font-family: 'Poppins', sans-serif;
-  background-color: rgba(255, 255, 255, 0.87) !important;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.37) !important;
 }
 
 tr.editable-row {
