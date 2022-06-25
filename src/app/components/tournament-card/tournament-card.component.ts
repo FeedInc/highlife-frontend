@@ -25,5 +25,4 @@ export class TournamentCardComponent implements OnInit {
     this.getAllOffers();
   }
 
-
 }

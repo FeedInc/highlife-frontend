@@ -422,5 +422,26 @@
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 8
     }
+  ],
+  "advisories": [
+    {
+      "id" : "ad1111",
+      "title" : "Linea MID en Dota2",
+      "description" : "Eastern Australia, Guam, Vladivostok",
+      "chanel" : "https://discord.gg/SPjgtH4W"
+    },
+    {
+      "id" : "ad1112",
+      "title" : "Linea TOP en Dota2",
+      "description" : "Eastern Australia, Guam, Vladivostok",
+      "chanel" : "https://discord.gg/SPjgtH4W"
+    },
+    {
+      "id" : "ad1113",
+      "title" : "Linea BOT en Dota2",
+      "description" : "Eastern Australia, Guam, Vladivostok",
+      "chanel" : "https://discord.gg/SPjgtH4W"
+    }
   ]
+
 }

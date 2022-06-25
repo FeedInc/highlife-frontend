@@ -1,0 +1,19 @@
+<div class = "flex">
+    <div style="margin: 2rem 1rem">
+      <mat-card>
+        <mat-card-title> Current Advisories </mat-card-title>
+        <mat-card-content>
+          <span> Available Advisories: </span> <span> <strong>{{ advisories.length }}</strong></span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="container-grid">
+      <mat-card *ngFor="let offer of advisories">
+        <mat-card-title> {{ offer.title  }} </mat-card-title>
+        <mat-card-content>
+          <p> Date: {{ offer.description   }} </p>
+          <p> Game: {{ offer.chanel }} </p>
+        </mat-card-content>
+      </mat-card>
+    </div>

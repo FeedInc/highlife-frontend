@@ -42,6 +42,8 @@ import { GamesComponent } from './views/games/games.component';
 import {PageNotFoundComponent} from "./views/page-not-found/page-not-found.component";
 import { ProfileSettingsComponent } from './components/profile-settings/profile-settings.component';
 import {MatSelectModule} from "@angular/material/select";
+import { AdvisoryCardComponent } from './components/advisory-card/advisory-card.component';
+import { AdvisoryDialogComponent } from './components/advisory-dialog/advisory-dialog.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +61,9 @@ import {MatSelectModule} from "@angular/material/select";
     GamesCardComponent,
     GamesComponent,
     PageNotFoundComponent,
-    ProfileSettingsComponent
+    ProfileSettingsComponent,
+    AdvisoryCardComponent,
+    AdvisoryDialogComponent
   ],
   imports: [
     BrowserModule,
