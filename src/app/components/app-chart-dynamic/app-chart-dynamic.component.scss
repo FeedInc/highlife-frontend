@@ -4,7 +4,10 @@ $cream: rgb(252, 251, 239);
   flex-direction: column;
   align-items: center;
 }
-
+.img {
+  background-color: #7c2c24;
+  border-radius: 2px;
+}
 .chart-card {
   //cursor: pointer;
   display: flex;

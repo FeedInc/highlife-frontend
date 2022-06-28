@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import {TournamentsService} from "../../services/tournaments/tournaments.service";
 import {Tournaments} from "../../models/tournaments";
 import {ActivatedRoute} from "@angular/router";
+import {TournamentsService} from "../../services/tournaments/tournaments.service";
 
 @Component({
-  selector: 'app-tournament-card',
-  templateUrl: './tournament-card.component.html',
-  styleUrls: ['./tournament-card.component.scss']
+  selector: 'app-tournament-card-one',
+  templateUrl: './tournament-card-one.component.html',
+  styleUrls: ['./tournament-card-one.component.scss']
 })
-export class TournamentCardComponent implements OnInit {
+export class TournamentCardOneComponent implements OnInit {
 
   tournaments:Tournaments[];
   gameId!: string;
+  count!: number;
   // constructor(private TournamentService: TournamentsService) {
   //   this.tournaments = [];
   // }

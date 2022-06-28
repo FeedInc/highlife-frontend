@@ -9,6 +9,7 @@ import {StudentProfileComponent} from "./views/student-profile/student-profile.c
 import {CreateTournamentsComponent} from "./views/create-tournaments/create-tournaments.component";
 import {GamesComponent} from "./views/games/games.component";
 import {PageNotFoundComponent} from "./views/page-not-found/page-not-found.component";
+import {DisplayTournamentsComponent} from "./views/display-tournaments/display-tournaments.component";
 
 
 const routes: Routes = [
@@ -22,8 +23,10 @@ const routes: Routes = [
   { path:"sign-up", component:RegisterComponent},
   { path: "student/:studentId", component: StudentProfileComponent },
   { path: "new-tournament", component: CreateTournamentsComponent },
-  { path: "portal/:gameId", component: GamesComponent },
+  { path: "tournaments/:gameId", component: DisplayTournamentsComponent },
+  { path: "portal/:gameId", component: GamesComponent},
   { path:"**", component:PageNotFoundComponent}
+
 
 
 

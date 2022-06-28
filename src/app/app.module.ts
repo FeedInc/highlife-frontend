@@ -42,6 +42,11 @@ import { GamesComponent } from './views/games/games.component';
 import {PageNotFoundComponent} from "./views/page-not-found/page-not-found.component";
 import { ProfileSettingsComponent } from './components/profile-settings/profile-settings.component';
 import {MatSelectModule} from "@angular/material/select";
+import { UserCardComponent } from './components/user-card/user-card.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { DisplayTournamentsComponent } from './views/display-tournaments/display-tournaments.component';
+import { TournamentCardInGameComponent } from './components/tournament-card-in-game/tournament-card-in-game.component';
+import { TournamentCardOneComponent } from './components/tournament-card-one/tournament-card-one.component';
 
 @NgModule({
 
@@ -60,7 +65,12 @@ import {MatSelectModule} from "@angular/material/select";
     GamesCardComponent,
     GamesComponent,
     PageNotFoundComponent,
-    ProfileSettingsComponent
+    ProfileSettingsComponent,
+    UserCardComponent,
+    UserProfileComponent,
+    DisplayTournamentsComponent,
+    TournamentCardInGameComponent,
+    TournamentCardOneComponent
   ],
   imports: [
     BrowserModule,

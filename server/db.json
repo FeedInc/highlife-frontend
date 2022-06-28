@@ -4,6 +4,8 @@
       "id": "23GH",
       "type": "padawan",
       "gender": "female",
+      "nickName": "23GH",
+      "urlToImage": "https://randomuser.me/api/portraits/women/59.jpg",
       "name": {
         "title": "Ms",
         "first": "کیانا",
@@ -100,12 +102,22 @@
       "nickName": "adrian",
       "email": "adrex@hotmail.es",
       "id": "ABi63Da",
+      "urlToImage": "https://tierragamer.com/wp-content/uploads/2022/03/Gohan-del-Futuro-Dragon-Ball-Heroes-Portada.jpg",
       "name": {
         "title": "Ms",
         "first": "کیانا",
         "last": "نكو نظر"
       },
       "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien"
+    },
+    {
+      "firstName": "adrian manuel",
+      "lastName": "cabrera",
+      "nickName": "12345@hotmail.es",
+      "email": "u201718169@upc.edu.pe",
+      "password": "1234567",
+      "urlToImage": "https://www.beatstars.com/assets/img/placeholders/default-avatar-circle.svg",
+      "id": "AAWqLTe"
     }
   ],
   "comments": [
@@ -123,7 +135,6 @@
       "background": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//blog/bg_repeater.jpg",
       "image": "https://i.ibb.co/mRZj8dX/dota2-landing-page-image-2x.webp",
       "banner": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/blog/default_header.jpg",
-
       "logo": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png",
       "statsLabels": [
         "Fighting",
@@ -279,7 +290,7 @@
       "id": "lol",
       "name": "League Of Legends",
       "type": "moba",
-      "image":"https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt5abbad4f1d1da663/602457cff4a7946af0338221/LOL_Key_Art_2021_318x428_RiotBar.jpg??format=pjpg&quality=85",
+      "image": "https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/blt5abbad4f1d1da663/602457cff4a7946af0338221/LOL_Key_Art_2021_318x428_RiotBar.jpg??format=pjpg&quality=85",
       "banner": "https://www.leagueoflegends.com/static/htp_hero_06-26c3fefbba4fcb12fce710e22e3b7882.png",
       "background": "https://www.leagueoflegends.com/static/base-3x-17b11ad755c37c6f9064ef950e31b409.png",
       "logo": "https://logodownload.org/wp-content/uploads/2014/09/lol-league-of-Legends-logo-1.png",
@@ -306,7 +317,7 @@
       "type": "shooter",
       "banner": "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8353cbd513234cc6/6261bc2e1574214ead420a52/Valorant_2022_E4A3_PlayVALORANT_PlayValorantHomepage.jpg",
       "background": "https://playvalorant.com/assets/images/agents-background.jpg",
-      "image":"https://i.ibb.co/FYhpnVx/valorant-landing-page-image-2x.webp",
+      "image": "https://i.ibb.co/FYhpnVx/valorant-landing-page-image-2x.webp",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png",
       "statsLabels": [
         "Kills",
@@ -344,7 +355,7 @@
   "tournaments": [
     {
       "name": "Torneo 1",
-      "game": "Dota 2",
+      "game": "dota2",
       "gameType": "5 vs 5",
       "date": "23/06/22",
       "maxTeams": 16,
@@ -353,18 +364,18 @@
       "id": 1
     },
     {
-      "name": "Torneo 1",
-      "game": "Dota 2",
-      "gameType": "5 vs 5",
+      "name": "Torneo 2",
+      "game": "dota2",
+      "gameType": "1 vs 1",
       "date": "23/06/22",
-      "maxTeams": 16,
-      "address": "Europe",
+      "maxTeams": 10,
+      "address": "America",
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 2
     },
     {
-      "name": "Torneo 1",
-      "game": "Dota 2",
+      "name": "Torneo 3",
+      "game": "lol",
       "gameType": "5 vs 5",
       "date": "23/06/22",
       "maxTeams": 16,
@@ -373,54 +384,34 @@
       "id": 3
     },
     {
-      "name": "Torneo 1",
-      "game": "Dota 2",
+      "name": "Torneo 4",
+      "game": "valorant",
       "gameType": "5 vs 5",
       "date": "23/06/22",
       "maxTeams": 16,
       "address": "Europe",
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 4
-    },   {
-      "name": "Torneo 1",
-      "game": "Dota 2",
+    },
+    {
+      "name": "Torneo 5",
+      "game": "dota2",
       "gameType": "5 vs 5",
       "date": "23/06/22",
       "maxTeams": 16,
       "address": "Europe",
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 5
-    },   {
-      "name": "Torneo 1",
-      "game": "Dota 2",
+    },
+    {
+      "name": "Torneo 6",
+      "game": "dota2",
       "gameType": "5 vs 5",
       "date": "23/06/22",
       "maxTeams": 16,
       "address": "Europe",
       "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
       "id": 6
-    },
-
-
-    {
-      "name": "Torneo 1",
-      "game": "Dota 2",
-      "gameType": "5 vs 5",
-      "date": "23/06/22",
-      "maxTeams": 16,
-      "address": "Europe",
-      "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
-      "id": 7
-    },
-    {
-      "name": "Torneo 1",
-      "game": "Dota 2",
-      "gameType": "5 vs 5",
-      "date": "23/06/22",
-      "maxTeams": 16,
-      "address": "Europe",
-      "urlToImage": "https://esportsbureau.com/wp-content/uploads/2022/01/epic-esports-events-y-winline-gestionaran-la-dota-2-champions-league-season-7.jpeg",
-      "id": 8
     }
   ]
 }

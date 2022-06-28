@@ -34,6 +34,9 @@ button {
 button mat-icon {
   color: white;
 }
+.mat-icon {
+  height: auto;
+}
 button mat-icon:hover {
   color: $yellow-duck;
 }
@@ -80,7 +83,7 @@ mat-nav-list img {
 }
 .sidenav {
   position: relative;
-  min-height: 93.5vh;
+  min-height: 92.5vh;
 }
 .sidenav-container {
   height: auto;

@@ -1,106 +1,195 @@
-  <mat-toolbar class="bg">
-    <mat-toolbar-row>
-
-      <button mat-button (click)="sidenav.toggle()" ><mat-icon>menu</mat-icon></button>
-      <button  mat-button [routerLink]="'/'"><app-logo-highlife></app-logo-highlife></button>
-      <span class="menu-spacer"></span>
-      <div class="btn-nav" fxShow="true" fxHide.lt-md>
-        <button mat-button style="  color: white;" [routerLink]="'/'">Games</button>
-        <td class="overflow-hidden">
-          <div ngbDropdown container="body" *ngIf="userLogged|async as user; else btnIngresar">
-            <button class="profile-btn" mat-raised-button id="dropdownBasic" ngbDropdownToggle>
-              <img style="border-radius: 100%;" *ngIf="user.photoURL" src="{{user.photoURL}}" width="30" height="30" class="d-inline-block" alt="">
-              {{user.email}}
-            </button>
-            <div ngbDropdownMenu aria-labelledby="dropdownBasic">
-              <button ngbDropdownItem (click)="logout()">Profile</button>
-              <button ngbDropdownItem (click)="logout()">Logout</button>
-            </div>
+<mat-toolbar class="bg">
+  <mat-toolbar-row>
+    <button mat-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <button mat-button [routerLink]="'/'">
+      <app-logo-highlife></app-logo-highlife>
+    </button>
+    <span class="menu-spacer"></span>
+    <div class="btn-nav" fxShow="true" fxHide.lt-md>
+      <button mat-button style="color: white" [routerLink]="'/'">Games</button>
+      <td class="overflow-hidden">
+        <div
+          ngbDropdown
+          container="body"
+          *ngIf="userLogged | async as user; else btnIngresar"
+        >
+          <button
+            class="profile-btn"
+            mat-raised-button
+            id="dropdownBasic"
+            ngbDropdownToggle
+          >
+            <img
+              style="border-radius: 100%"
+              *ngIf="user.photoURL"
+              src="{{ user.photoURL }}"
+              width="30"
+              height="30"
+              class="d-inline-block"
+              alt=""
+            />
+            {{ user.email }}
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic">
+            <button ngbDropdownItem (click)="logout()">Profile</button>
+            <button ngbDropdownItem (click)="logout()">Logout</button>
           </div>
-        </td>
+        </div>
+      </td>
 
-        <ng-template #btnIngresar>
-            <button style="margin-right: 1rem;" mat-raised-button color="primary" routerLink="/login">Login</button>
-            <button  mat-raised-button color="accent"  [routerLink]="'/sign-up'">Sign up</button>
-        </ng-template>
-      </div>
+      <ng-template #btnIngresar>
+        <button
+          style="margin-right: 1rem"
+          mat-raised-button
+          color="primary"
+          routerLink="/login"
+        >
+          Login
+        </button>
+        <button mat-raised-button color="accent" [routerLink]="'/sign-up'">
+          Sign up
+        </button>
+      </ng-template>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
 
-    </mat-toolbar-row>
-  </mat-toolbar>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav class="sidenav-content" opened="false" mode="push">
+    <mat-nav-list>
+      <span class="side-title"
+        ><mat-icon class="icon">group_work</mat-icon>Teams</span
+      >
+      <mat-divider></mat-divider>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button [routerLink]="'/'" class="source-name"> Create a Team</a>
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-nav-list>
+      <span class="side-title"
+        ><mat-icon class="icon"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/109/109812.png"
+            alt="trophy"
+            width="25"
+            height="25" /></mat-icon
+        >Tournament</span
+      >
+      <mat-divider></mat-divider>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button [routerLink]="'new-tournament'" class="source-name">
+          Create a Tournament</a
+        >
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-nav-list>
+      <span class="side-title"
+        ><mat-icon class="icon"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/2972/2972351.png"
+            alt="games" /></mat-icon
+        >My games</span
+      >
+      <mat-divider></mat-divider>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button routerLink="/portal/dota2" class="source-name"
+          ><mat-icon class="icon"
+            ><img
+              src="https://epulze.com/static/build/icon-dota2.png"
+              alt="dota2" /></mat-icon
+          >Dota 2</a
+        >
+      </mat-list-item>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button routerLink="/portal/lol" class="source-name"
+        ><mat-icon class="icon"
+        ><img
+          src="https://th.bing.com/th/id/OIP.IzKAvWrwi3NssPxbfp3gBQHaHa?pid=ImgDet&rs=1"
+          alt="lol"/></mat-icon
+        >League of Legends</a
+        >
+      </mat-list-item>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button routerLink="/portal/csgo" class="source-name"
+          ><mat-icon class="icon"
+            ><img
+              src="https://epulze.com/static/build/icon-csgo.png"
+              alt="csgo" /></mat-icon
+          >CS:GO</a
+        >
+      </mat-list-item>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button routerLink="/portal/valorant" class="source-name"
+          ><mat-icon class="icon"
+            ><img
+              src="https://epulze.com/static/build/icon-valorant.png"
+              alt="valorant" /></mat-icon
+          >VALORANT</a
+        >
+      </mat-list-item>
+    </mat-nav-list>
+    <mat-nav-list>
+      <span class="side-title">
+        <mat-icon class="icon"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/109/109812.png"
+            alt="trophy"
+            width="25"
+            height="25" /></mat-icon
+        >Tournaments</span
+      >
+      <mat-divider></mat-divider>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button routerLink="tournaments/dota2" class="source-name"
+          ><mat-icon class="icon"
+            ><img
+              src="https://epulze.com/static/build/icon-dota2.png"
+              alt="dota2"
+              width="32"
+              height="32" /></mat-icon
+          >Dota 2</a
+        >
+      </mat-list-item>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button routerLink="tournaments/lol" class="source-name"
+        ><mat-icon class="icon"
+        ><img
+          src="https://th.bing.com/th/id/OIP.IzKAvWrwi3NssPxbfp3gBQHaHa?pid=ImgDet&rs=1"
+          alt="lol"/></mat-icon
+        >League of Legends</a
+        >
+      </mat-list-item>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button routerLink="tournaments/csgo" class="source-name"
+          ><mat-icon class="icon"
+            ><img
+              src="https://epulze.com/static/build/icon-csgo.png"
+              alt="csgo"
+              width="32"
+              height="32" /></mat-icon
+          >CS:GO</a
+        >
+      </mat-list-item>
+      <mat-list-item class="list-item" (click)="sidenav.close()">
+        <a mat-button routerLink="tournaments/valorant" class="source-name"
+          ><mat-icon class="icon"
+            ><img
+              src="https://epulze.com/static/build/icon-valorant.png"
+              alt="valorant"
+              width="32"
+              /></mat-icon
+          >VALORANT</a
+        >
+      </mat-list-item>
+    </mat-nav-list>
 
-  <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #sidenav class="sidenav-content" opened="false" mode="push">
-      <mat-nav-list>
-        <span class="side-title"><mat-icon class="icon">group_work</mat-icon>Teams</span>
-        <mat-divider></mat-divider>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"> Create a Team</a>
-        </mat-list-item>
-      </mat-nav-list>
-      <mat-nav-list>
-        <span class="side-title"><mat-icon class="icon"><img src="https://cdn-icons-png.flaticon.com/512/109/109812.png" alt="trophy" width="25" height="25"></mat-icon>Tournament</span>
-        <mat-divider></mat-divider>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'new-tournament'" class="source-name"> Create a Tournament</a>
-        </mat-list-item>
-      </mat-nav-list>
+  </mat-sidenav>
 
-      <mat-nav-list>
-        <span class="side-title"><mat-icon class="icon"><img src="https://cdn-icons-png.flaticon.com/512/2972/2972351.png" alt="games"></mat-icon>My games</span>
-        <mat-divider></mat-divider>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-dota2.png" alt="dota2" ></mat-icon>Dota 2</a>
-        </mat-list-item>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-csgo.png" alt="csgo" ></mat-icon>CS:GO</a>
-        </mat-list-item>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-valorant.png" alt="valorant" ></mat-icon>VALORANT</a>
-        </mat-list-item>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-rocket-league.png" alt="rocket-league" ></mat-icon>Rocket League</a>
-        </mat-list-item>
-      </mat-nav-list>
-
-      <mat-nav-list>
-        <span class="side-title"> <mat-icon class="icon"><img src="https://cdn-icons-png.flaticon.com/512/109/109812.png" alt="trophy" width="25" height="25"></mat-icon>Tournaments</span>
-        <mat-divider></mat-divider>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-dota2.png" alt="dota2" width="32" height="32"></mat-icon>Dota 2</a>
-        </mat-list-item>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-csgo.png" alt="csgo" width="32" height="32"></mat-icon>CS:GO</a>
-        </mat-list-item>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-valorant.png" alt="valorant" width="32" height="32"></mat-icon>VALORANT</a>
-        </mat-list-item>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-rocket-league.png" alt="rocket-league" width="32" height="32"></mat-icon>Rocket League</a>
-        </mat-list-item>
-      </mat-nav-list>
-
-      <mat-nav-list>
-        <span class="side-title"><mat-icon class="icon"><img src="https://img.icons8.com/external-inipagistudio-mixed-inipagistudio/344/external-league-pro-gamer-inipagistudio-mixed-inipagistudio.png" alt="league" width="25" height="25"></mat-icon>Leagues</span>
-        <mat-divider></mat-divider>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-dota2.png" alt="dota2" width="32" height="32"></mat-icon>Dota 2</a>
-        </mat-list-item>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-csgo.png" alt="csgo" width="32" height="32"></mat-icon>CS:GO</a>
-        </mat-list-item>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-valorant.png" alt="valorant" width="32" height="32"></mat-icon>VALORANT</a>
-        </mat-list-item>
-        <mat-list-item class="list-item" (click)="sidenav.close()">
-          <a mat-button [routerLink]="'/'" class="source-name"><mat-icon class="icon"><img src="https://epulze.com/static/build/icon-rocket-league.png" alt="rocket-league" width="32" height="32"></mat-icon>Rocket League</a>
-        </mat-list-item>
-      </mat-nav-list>
-
-    </mat-sidenav>
-
-    <mat-sidenav-content>
-      <div class="sidenav">
-        <router-outlet></router-outlet>
-      </div>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+  <mat-sidenav-content>
+    <div class="sidenav">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

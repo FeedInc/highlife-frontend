@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { catchError, Observable, retry, throwError } from "rxjs";
-import { Users} from '../../models/users';
+import { IUser} from '../../models/IUser';
 
 @Injectable({
   providedIn: 'root'
@@ -28,9 +28,9 @@ export class UsersApiService {
     return throwError(() => new Error(`Something happened with request, please try again later`));
   }
 
-  // Create Users
-  addUsers(item: any): Observable<Users> {
-    return this.http.post<Users>(this.basePath, JSON.stringify(item),this.httpOptions)
+  // Create IUser
+  createUser(item: any): Observable<IUser> {
+    return this.http.post<IUser>(this.basePath, JSON.stringify(item),this.httpOptions)
       .pipe(retry(2), catchError(this.handleError));
   }
 
@@ -40,10 +40,6 @@ export class UsersApiService {
 
   getUser(idValue: string) {
     return this.http.get(`${this.basePath}/${idValue}`, this.httpOptions);
-  }
-
-  createUser(newUser: any) {
-    return this.http.post(`${this.basePath}`, JSON.stringify(newUser) ,this.httpOptions)
   }
 
   updateUser(idValue: string, userUpdate: any) {

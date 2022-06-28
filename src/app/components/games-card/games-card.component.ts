@@ -23,7 +23,6 @@ export class GamesCardComponent implements OnInit {
 
   ngOnInit() {
     this.getAllGames();
-
   }
 
 }
