@@ -1,131 +1,96 @@
 {
   "users": [
     {
-      "id": "23GH",
-      "type": "padawan",
-      "gender": "female",
-      "nickName": "23GH",
-      "urlToImage": "https://randomuser.me/api/portraits/women/59.jpg",
-      "name": {
-        "title": "Ms",
-        "first": "کیانا",
-        "last": "نكو نظر"
-      },
-      "medals": [
-        {
-          "game": "dota2",
-          "medal": "guardian-4"
-        },
-        {
-          "game": "lol",
-          "medal": "bronce-3"
-        }
-      ],
-      "games": [
-        "lol",
-        "dota2"
-      ],
-      "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien",
-      "location": {
-        "street": {
-          "number": 7993,
-          "name": "میدان دکتر فاطمی / جهاد"
-        },
-        "city": "بروجرد",
-        "state": "کهگیلویه و بویراحمد",
-        "country": "Iran",
-        "postcode": 12366,
-        "coordinates": {
-          "latitude": "28.9607",
-          "longitude": "126.7840"
-        },
-        "timezone": {
-          "offset": "+10:00",
-          "description": "Eastern Australia, Guam, Vladivostok"
-        }
-      },
-      "email": "khyn.nkwnzr@example.com",
-      "login": {
-        "uuid": "ebefcb3e-098d-4ef6-bd7a-60b29f97f9a5",
-        "username": "redgorilla126",
-        "password": "jolly",
-        "salt": "KI148zD2",
-        "md5": "f7b731d2db5b5b2ade54694e6e90e441",
-        "sha1": "71b3502ea012d5754fe96cce5aaec765fae7015f",
-        "sha256": "b0a9db814e387be2ef355a65102a4d13f38943a25e1c2dd9afb1b5285163fa2a"
-      },
-      "dob": {
-        "date": "1983-10-13T00:38:19.993Z",
-        "age": 39
-      },
-      "registered": {
-        "date": "2005-06-23T08:42:34.835Z",
-        "age": 17
-      },
-      "phone": "095-49563609",
-      "cell": "0975-766-0030",
-      "picture": {
-        "large": "https://randomuser.me/api/portraits/women/59.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/59.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/59.jpg"
-      },
-      "nat": "IR",
-      "stats": [
-        {
-          "gameId": "dota2",
-          "data": [
-            20,
-            30,
-            40,
-            10,
-            20
-          ]
-        },
-        {
-          "gameId": "lol",
-          "data": [
-            70,
-            35,
-            42,
-            19,
-            42,
-            90,
-            28,
-            90
-          ]
-        }
-      ]
-    },
+            "id": "23GH",
+            "type": "padawan",
+            "gender": "female",
+            "nickName": "23GH",
+            "urlToImage": "https://randomuser.me/api/portraits/women/59.jpg",
+            "name": {
+              "title": "Ms",
+              "first": "کیانا",
+              "last": "نكو نظر"
+            },
+            "medals": [
+              {
+                "game": "dota2",
+                "medal": "guardian-4"
+              },
+              {
+                "game": "lol",
+                "medal": "bronce-3"
+              }
+            ],
+            "games": [
+              "lol",
+              "dota2"
+            ],
+            "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien",
+            "location": {
+              "street": {
+                "number": 7993,
+                "name": "میدان دکتر فاطمی / جهاد"
+              },
+              "city": "بروجرد",
+              "state": "کهگیلویه و بویراحمد",
+              "country": "Iran",
+              "postcode": 12366,
+              "coordinates": {
+                "latitude": "28.9607",
+                "longitude": "126.7840"
+              },
+              "timezone": {
+                "offset": "+10:00",
+                "description": "Eastern Australia, Guam, Vladivostok"
+              }
+            },
+            "email": "khyn.nkwnzr@example.com",
+            "picture": {
+              "large": "https://randomuser.me/api/portraits/women/59.jpg",
+              "medium": "https://randomuser.me/api/portraits/med/women/59.jpg",
+              "thumbnail": "https://randomuser.me/api/portraits/thumb/women/59.jpg"
+            },
+            "nat": "IR",
+            "stats": [
+              {
+                "gameId": "dota2",
+                "data": [
+                  20,
+                  30,
+                  40,
+                  10,
+                  20
+                ]
+              },
+              {
+                "gameId": "lol",
+                "data": [
+                  70,
+                  35,
+                  42,
+                  19,
+                  42,
+                  90,
+                  28,
+                  90
+                ]
+              }
+            ]
+          },
     {
-      "firstName": "adrian",
-      "lastName": "esqueiros",
-      "nickName": "adrian",
-      "email": "adrex@hotmail.es",
-      "id": "ABi63Da",
-      "urlToImage": "https://tierragamer.com/wp-content/uploads/2022/03/Gohan-del-Futuro-Dragon-Ball-Heroes-Portada.jpg",
-      "name": {
-        "title": "Ms",
-        "first": "کیانا",
-        "last": "نكو نظر"
-      },
-      "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien"
-    },
-    {
-      "firstName": "adrian manuel",
-      "lastName": "cabrera",
-      "nickName": "12345@hotmail.es",
-      "email": "u201718169@upc.edu.pe",
-      "password": "1234567",
-      "urlToImage": "https://www.beatstars.com/assets/img/placeholders/default-avatar-circle.svg",
-      "id": "AAWqLTe"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
+            "firstName": "adrian",
+            "lastName": "esqueiros",
+            "nickName": "adrian",
+            "email": "adrex@hotmail.es",
+            "id": "",
+            "urlToImage": "https://tierragamer.com/wp-content/uploads/2022/03/Gohan-del-Futuro-Dragon-Ball-Heroes-Portada.jpg",
+            "name": {
+              "title": "Ms",
+              "first": "کیانا",
+              "last": "نكو نظر"
+            },
+            "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien"
+          }
   ],
   "games": [
     {
@@ -145,26 +110,6 @@
       ],
       "medals": [
         {
-          "name": "herald-1",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/85/SeasonalRank1-1.png"
-        },
-        {
-          "name": "herald-2",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/ee/SeasonalRank1-2.png"
-        },
-        {
-          "name": "herald-3",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/0/05/SeasonalRank1-3.png"
-        },
-        {
-          "name": "herald-4",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6d/SeasonalRank1-4.png"
-        },
-        {
-          "name": "herald-5",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/2b/SeasonalRank1-5.png"
-        },
-        {
           "name": "guardian-1",
           "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/c/c7/SeasonalRank2-1.png"
         },
@@ -183,106 +128,6 @@
         {
           "name": "guardian-5",
           "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/32/SeasonalRank2-5.png"
-        },
-        {
-          "name": "crusader-1",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/82/SeasonalRank3-1.png"
-        },
-        {
-          "name": "crusader-2",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/6e/SeasonalRank3-2.png"
-        },
-        {
-          "name": "crusader-3",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/67/SeasonalRank3-3.png"
-        },
-        {
-          "name": "crusader-4",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/87/SeasonalRank3-4.png"
-        },
-        {
-          "name": "crusader-5",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b1/SeasonalRank3-5.png"
-        },
-        {
-          "name": "archon-1",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/76/SeasonalRank4-1.png"
-        },
-        {
-          "name": "archon-2",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/87/SeasonalRank4-2.png"
-        },
-        {
-          "name": "archon-3",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/6/60/SeasonalRank4-3.png"
-        },
-        {
-          "name": "archon-4",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/4a/SeasonalRank4-4.png"
-        },
-        {
-          "name": "archon-5",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/a/a3/SeasonalRank4-5.png"
-        },
-        {
-          "name": "legend-1",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/7/79/SeasonalRank5-1.png"
-        },
-        {
-          "name": "legend-2",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/5/52/SeasonalRank5-2.png"
-        },
-        {
-          "name": "legend-3",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/88/SeasonalRank5-3.png"
-        },
-        {
-          "name": "legend-4",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/2/25/SeasonalRank5-4.png"
-        },
-        {
-          "name": "legend-5",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8e/SeasonalRank5-5.png"
-        },
-        {
-          "name": "ancient-1",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/e/e0/SeasonalRank6-1.png"
-        },
-        {
-          "name": "ancient-2",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/1c/SeasonalRank6-2.png"
-        },
-        {
-          "name": "ancient-3",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/da/SeasonalRank6-3.png"
-        },
-        {
-          "name": "ancient-4",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/d/db/SeasonalRank6-4.png"
-        },
-        {
-          "name": "ancient-5",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/4/47/SeasonalRank6-5.png"
-        },
-        {
-          "name": "divine-1",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/b/b7/SeasonalRank7-1.png"
-        },
-        {
-          "name": "divine-2",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/8/8f/SeasonalRank7-2.png"
-        },
-        {
-          "name": "divine-3",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/f/fd/SeasonalRank7-3.png"
-        },
-        {
-          "name": "divine-4",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/1/13/SeasonalRank7-4.png"
-        },
-        {
-          "name": "divine-5",
-          "imageRank": "https://static.wikia.nocookie.net/dota2_gamepedia/images/3/33/SeasonalRank7-5.png"
         }
       ]
     },

@@ -9,7 +9,7 @@ import { IUser} from '../../models/IUser';
 export class UsersApiService {
 
   port = 3000;
-  basePath = `http://localhost:${this.port}/api/v1/users`;
+  basePath = `https://my-json-server.typicode.com/FeedInc/highlife-frontend/users`;
   //pass automatically to attribute. Generate 2 instances the value you pass and the value yo get.
   constructor(private http: HttpClient) {}
   httpOptions = {

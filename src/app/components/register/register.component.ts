@@ -17,9 +17,18 @@ export class RegisterComponent implements OnInit {
   };
   userData!: IUser;
   @ViewChild('userForm', { static: false }) userForm!: NgForm;
+  displayedColumns: string[] = [
+    'id',
+    'firstName',
+    'lastName',
+    'nickName',
+    'email',
+    'password',
+    'urlToImage',
+  ];
 
   constructor(
-    private serviceUser: UsersApiService,
+    private usersApiService: UsersApiService,
     private authService: AuthService,
     public router: Router
   ) {
@@ -33,22 +42,32 @@ export class RegisterComponent implements OnInit {
       console.log('se registro: ', res);
     });
   }
-  addUser(): void {
-    const newUser = {
-      firstName: this.userData.firstName,
-      lastName: this.userData.lastName,
-      nickName: this.userData.nickName,
-      email: this.user.email,
-      password:this.user.password,
-      urlToImage: "https://www.beatstars.com/assets/img/placeholders/default-avatar-circle.svg",
-    };
-    this.serviceUser.createUser(newUser).subscribe(() => {});
+  // addUser(): void {
+  //   const newUser = {
+  //     id: this.userData.id,
+  //     firstName: this.userData.firstName,
+  //     lastName: this.userData.lastName,
+  //     nickName: this.userData.nickName,
+  //     email: this.user.email,
+  //     password:this.user.password,
+  //     urlToImage: "https://www.beatstars.com/assets/img/placeholders/default-avatar-circle.svg",
+  //   };
+  // }
+  addStudent() {
+    this.userData.id = 0;
+    this.userData.email = this.user.email;
+    this.userData.password = this.user.password;
+    this.userData.urlToImage =
+      'https://www.beatstars.com/assets/img/placeholders/default-avatar-circle.svg';
+    this.usersApiService
+      .createUser(this.userData)
+      .subscribe((response: any) => {});
   }
 
   onSubmit() {
     if (this.userForm.form.valid) {
-      this.addUser();
-      this.signUp();
+      this.addStudent();
+      // this.signUp();
     } else {
       console.log('Invalid data!');
     }

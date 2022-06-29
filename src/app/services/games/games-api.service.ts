@@ -8,7 +8,7 @@ export class GamesApiService {
 
 
   port = 3000;
-  baseUrl = `http://localhost:${this.port}/games`;
+  baseUrl = `https://my-json-server.typicode.com/FeedInc/highlife-frontend/games`;
   constructor(private http: HttpClient) {}
   httpOptions = {
     headers: new HttpHeaders({
