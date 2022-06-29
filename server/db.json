@@ -1,20 +1,23 @@
 {
   "users": [
     {
-      "id": "23GH",
-      "type": "padawan",
-      "gender": "female",
-      "nickName": "23GH",
-      "urlToImage": "https://randomuser.me/api/portraits/women/59.jpg",
+      "firstName": "jhon",
+      "lastName": "Doe",
+      "nickName": "Arteezy",
+      "email": "jhonl@gmail.com",
+      "password": "12345678",
+      "urlToImage": "https://th.bing.com/th/id/R.349931f880c221365feb145640f4a743?rik=TN2WaHSg9e9dBQ&riu=http%3a%2f%2fwww.gamersdecide.com%2fsites%2fdefault%2ffiles%2fcontent-images%2fnews%2f2017%2f08%2f15%2farteezy-says-win-or-lose-he-will-continue-play-dota-2%2farteezy.jpg&ehk=SktNGtxZSyjKMw%2bUPEC4w5cYU1p94BnA0ZzE%2bp32gzc%3d&risl=&pid=ImgRaw&r=0",
+      "id": "C1UtvXZ",
       "name": {
-        "title": "Ms",
-        "first": "کیانا",
-        "last": "نكو نظر"
+        "title": "Mr",
+        "first": "Arteezy",
+        "last": ""
       },
+
       "medals": [
         {
           "game": "dota2",
-          "medal": "guardian-4"
+          "medal": "divine-5"
         },
         {
           "game": "lol",
@@ -25,51 +28,81 @@
         "lol",
         "dota2"
       ],
-      "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien",
+      "biography": "Just to ez for rtz",
+      "location": {
+        "city": "",
+        "state": "",
+        "country": "Canada"
+      },
+
+      "picture": {
+        "large": "https://th.bing.com/th/id/R.349931f880c221365feb145640f4a743?rik=TN2WaHSg9e9dBQ&riu=http%3a%2f%2fwww.gamersdecide.com%2fsites%2fdefault%2ffiles%2fcontent-images%2fnews%2f2017%2f08%2f15%2farteezy-says-win-or-lose-he-will-continue-play-dota-2%2farteezy.jpg&ehk=SktNGtxZSyjKMw%2bUPEC4w5cYU1p94BnA0ZzE%2bp32gzc%3d&risl=&pid=ImgRaw&r=0"
+      },
+      "stats": [
+        {
+          "gameId": "dota2",
+          "data": [
+            100,
+            100,
+            50,
+            80,
+            70
+          ]
+        },
+        {
+          "gameId": "lol",
+          "data": [
+            70,
+            35,
+            42,
+            19,
+            42,
+            90,
+            28,
+            90
+          ]
+        }
+      ]
+
+    },
+    {
+      "id": "LuisPrado",
+      "type": "padawan",
+      "nickName": "Luis",
+      "urlToImage": "https://pps.whatsapp.net/v/t61.24694-24/290612494_315531927342028_8215600647302755062_n.jpg?ccb=11-4&oh=15fd2900cdb2f7abdd8115ff6e8bcb1b&oe=62CC3335",
+      "name": {
+        "title": "Mr",
+        "first": "Luis",
+        "last": "Prado"
+      },
+      "medals": [
+        {
+          "game": "dota2",
+          "medal": "legend-1"
+        },
+        {
+          "game": "lol",
+          "medal": "bronce-3"
+        }
+      ],
+      "games": [
+        "lol",
+        "dota2"
+      ],
+      "biography": "Me gusta jugar con mis amigos, y bajar la pepian en el juego DOTA2",
       "location": {
         "street": {
           "number": 7993,
-          "name": "میدان دکتر فاطمی / جهاد"
+          "name": "Luis Prado"
         },
-        "city": "بروجرد",
-        "state": "کهگیلویه و بویراحمد",
-        "country": "Iran",
-        "postcode": 12366,
-        "coordinates": {
-          "latitude": "28.9607",
-          "longitude": "126.7840"
-        },
-        "timezone": {
-          "offset": "+10:00",
-          "description": "Eastern Australia, Guam, Vladivostok"
-        }
+        "city": "Lima",
+        "state": "San borja",
+        "country": "Peru"
       },
       "email": "khyn.nkwnzr@example.com",
-      "login": {
-        "uuid": "ebefcb3e-098d-4ef6-bd7a-60b29f97f9a5",
-        "username": "redgorilla126",
-        "password": "jolly",
-        "salt": "KI148zD2",
-        "md5": "f7b731d2db5b5b2ade54694e6e90e441",
-        "sha1": "71b3502ea012d5754fe96cce5aaec765fae7015f",
-        "sha256": "b0a9db814e387be2ef355a65102a4d13f38943a25e1c2dd9afb1b5285163fa2a"
-      },
-      "dob": {
-        "date": "1983-10-13T00:38:19.993Z",
-        "age": 39
-      },
-      "registered": {
-        "date": "2005-06-23T08:42:34.835Z",
-        "age": 17
-      },
-      "phone": "095-49563609",
-      "cell": "0975-766-0030",
       "picture": {
-        "large": "https://randomuser.me/api/portraits/women/59.jpg",
-        "medium": "https://randomuser.me/api/portraits/med/women/59.jpg",
-        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/59.jpg"
+        "large": "https://pps.whatsapp.net/v/t61.24694-24/290612494_315531927342028_8215600647302755062_n.jpg?ccb=11-4&oh=15fd2900cdb2f7abdd8115ff6e8bcb1b&oe=62CC3335"
       },
-      "nat": "IR",
       "stats": [
         {
           "gameId": "dota2",
@@ -97,34 +130,133 @@
       ]
     },
     {
-      "firstName": "adrian",
-      "lastName": "esqueiros",
-      "nickName": "adrian",
+      "firstName": "fernando",
+      "lastName": "garay",
+      "nickName": "FernadoGaa",
       "email": "adrex@hotmail.es",
       "id": "ABi63Da",
-      "urlToImage": "https://tierragamer.com/wp-content/uploads/2022/03/Gohan-del-Futuro-Dragon-Ball-Heroes-Portada.jpg",
+      "urlToImage": "https://i.ibb.co/yBGyfJP/92875569-343314529957629-2770467245535526912-n.jpg",
       "name": {
-        "title": "Ms",
-        "first": "کیانا",
-        "last": "نكو نظر"
+        "title": "Mr",
+        "first": "Fernando",
+        "last": "Gaaa"
       },
-      "biography": "posuere at, velit. Cras lorem lorem, luctus ut, pellentesque eget, dictum placerat, augue. Sed molestie. Sed id risus quis diam luctus lobortis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare. In faucibus. Morbi vehicula. Pellentesque tincidunt tempus risus. Donec egestas. Duis ac arcu. Nunc mauris. Morbi non sapien"
+
+      "medals": [
+        {
+          "game": "dota2",
+          "medal": "crusader-4"
+        },
+        {
+          "game": "lol",
+          "medal": "bronce-3"
+        }
+      ],
+      "games": [
+        "lol",
+        "dota2"
+      ],
+      "biography": "Tambien me gusta jugar dota2 con mis amigos, en mis tiempos libres y bajar pepian",
+      "location": {
+        "city": "Lima",
+        "state": "San borja",
+        "country": "Peru"
+      },
+
+      "picture": {
+        "large": "https://i.ibb.co/yBGyfJP/92875569-343314529957629-2770467245535526912-n.jpg"
+      },
+      "stats": [
+        {
+          "gameId": "dota2",
+          "data": [
+            100,
+            30,
+            30,
+            50,
+            40
+          ]
+        },
+        {
+          "gameId": "lol",
+          "data": [
+            70,
+            35,
+            42,
+            19,
+            42,
+            90,
+            28,
+            90
+          ]
+        }
+      ]
     },
     {
-      "firstName": "adrian manuel",
-      "lastName": "cabrera",
-      "nickName": "12345@hotmail.es",
+      "firstName": "Dendi",
+      "lastName": "",
+      "nickName": "Dendi",
       "email": "u201718169@upc.edu.pe",
       "password": "1234567",
-      "urlToImage": "https://www.beatstars.com/assets/img/placeholders/default-avatar-circle.svg",
-      "id": "AAWqLTe"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "urlToImage": "https://th.bing.com/th/id/OIP.fCT22TyA-A6uUktiqylIzwHaEL?w=330&h=186&c=7&r=0&o=5&pid=1.7",
+      "id": "AAWqLTe",
+      "name": {
+        "title": "Mr",
+        "first": "Daniel",
+        "last": "Ishnutan"
+      },
+      "medals": [
+        {
+          "game": "dota2",
+          "medal": "divine-4"
+        },
+        {
+          "game": "lol",
+          "medal": "bronce-3"
+        }
+      ],
+      "games": [
+        "lol",
+        "dota2"
+      ],
+      "biography": "I love playing DOTA2 and teaching my fans",
+      "location": {
+        "street": {
+          "number": 7993,
+          "name": "Luis Prado"
+        },
+        "city": "Ukraine",
+        "state": "",
+        "country": ""
+      },
+      "picture": {
+        "large": "https://th.bing.com/th/id/OIP.fCT22TyA-A6uUktiqylIzwHaEL?w=330&h=186&c=7&r=0&o=5&pid=1.7"
+      },
+      "stats": [
+        {
+          "gameId": "dota2",
+          "data": [
+            100,
+            100,
+            80,
+            40,
+            70
+          ]
+        },
+        {
+          "gameId": "lol",
+          "data": [
+            70,
+            35,
+            42,
+            19,
+            42,
+            90,
+            28,
+            90
+          ]
+        }
+      ]
     }
   ],
   "games": [
