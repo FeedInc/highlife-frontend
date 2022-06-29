@@ -8,7 +8,7 @@ import { Tournaments} from "../../models/tournaments";
 })
 export class TournamentsService {
   // Students Endpoint
-  basePath = 'http://localhost:3000/api/v1/tournaments';
+  basePath = 'https://my-json-server.typicode.com/FeedInc/highlife-frontend/tournaments';
 
   httpOptions = {
     headers: new HttpHeaders({
