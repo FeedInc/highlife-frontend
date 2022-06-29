@@ -241,6 +241,23 @@
           "imageRank": "https://static.wikia.nocookie.net/leagueoflegends/images/8/81/Season_2019_-_Bronze_3.png"
         }
       ]
+    },   {
+      "id": "valorant",
+      "name": "Valorant",
+      "type": "shooter",
+      "banner": "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt8353cbd513234cc6/6261bc2e1574214ead420a52/Valorant_2022_E4A3_PlayVALORANT_PlayValorantHomepage.jpg",
+      "background": "https://playvalorant.com/assets/images/agents-background.jpg",
+      "image": "https://i.ibb.co/FYhpnVx/valorant-landing-page-image-2x.webp",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png"
+    },
+    {
+      "id": "csgo",
+      "name": "CS-GO",
+      "type": "shooter",
+      "image": "https://i.ibb.co/48rw36y/csgo-landing-page-image-2x.webp",
+      "banner": "https://cdn.akamai.steamstatic.com/apps/csgo/images/dust2/bg_01.png?v=2",
+      "background": "http://media.steampowered.com/apps/csgo/blog/images/armsdeal/bg1.jpg",
+      "logo": "https://1000marcas.net/wp-content/uploads/2020/03/Logo-CSGO.png"
     }
   ],
   "tournaments": [
